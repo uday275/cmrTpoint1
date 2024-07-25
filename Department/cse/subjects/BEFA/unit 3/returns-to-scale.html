@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Returns To Scale - cmrTpoint</title>
+    <meta name="description"
+        content="Understand the concept of returns to scale, which explains changes in output when all factors of production are changed. Learn about the laws of increasing, constant, and decreasing returns to scale.">
+    <meta name="keywords"
+        content="returns to scale, variable proportions, production factors, increasing returns, constant returns, decreasing returns, output, input, economic profit, production">
+    <meta name="author" content="Your Name">
+
+    <link rel="icon" type="image/x-icon" href="../../../../../assets/media/icon.png">
+    <link rel="stylesheet" href="../../../../../assets/style.css">
+    <link rel="stylesheet" href="../../../../../assets/mstyle.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+
+
+
+
+<body>
+    <div>
+        <div class="menu-bar">
+            <ul>
+                <a href="../../../../../index.html" style="display: inline-block;">
+                    <img src="../../../../../assets/media/logo1.0.png" alt="Logo" class="logo"
+                        style="width: 50px; height:40px ;">
+                </a>
+
+
+                <li class=""><a href="../../../../cse.html">Home</a></li>
+                <li class=""><a href="../befa.html">BEFA</a></li>
+                <li class="hide-desktop show-mobile"> <a href="../unit 3/topic3.html">☰</a></li>
+
+                <li><a href="../unit 1/unit1.html">Unit-1</a></li>
+                <li><a href="../unit 2/unit2.html">Unit-2</a></li>
+                <li class="active"><a href="./unit3.html">Unit-3</a></li>
+                <li><a href="../unit 4/unit4.html">Unit-4</a></li>
+                <li><a href="../unit 5/unit5.html">Unit-5</a></li>
+            </ul>
+        </div>
+        <script>
+            // Function to check viewport size and toggle classes accordingly
+            function toggleClasses() {
+                var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+                var elements = document.querySelectorAll('.hide-desktop, .show-mobile');
+
+                if (viewportWidth >= 768) {
+                    elements.forEach(function (element) {
+                        element.classList.remove('hide-desktop');
+                        element.classList.add('show-mobile');
+                    });
+                } else {
+                    elements.forEach(function (element) {
+                        element.classList.remove('show-mobile');
+                        element.classList.add('hide-desktop');
+                    });
+                }
+            }
+
+            // Call toggleClasses function when the page loads and when it is resized
+            window.onload = toggleClasses;
+            window.onresize = toggleClasses;
+        </script>
+
+        <div class="inbox">
+            <div class="sidebar">
+                <h2><a href="./production-analysis.html" class="">Production Analysis</a></h2>
+                <ul>
+
+                    <li><a href="./factors-of-production.html">Factors of Production </a></li>
+                    <li><a href="./production-function.html"> Production Function</a></li>
+                    <li><a href="./production-function-with-one-variable.html"> Production Function with One
+                            Variable Input</a></li>
+                    <li><a href="./two-variable-inputs.html">Two variable Inputs </a></li>
+                    <li><a href="./returns-to-scale.html" class="active">Returns to scale </a></li>
+                    <li><a href="./different-types-of-production.html"> Different Types of Production
+                            Function</a></li>
+                    <li><a href="#"> </a></li>
+                    <li><a href="#"> </a></li>
+
+
+                    <h3><a href="./cost-analysis.html">Cost Analysis</a></h3>
+                    <ul>
+
+                        <li><a href="./types-of-cost.html">Types of Costs </a></li>
+                        <li><a href="./short-run-and-long-rub-cost-functions.html">Short Run and Long Run Cost Functions
+                            </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+
+                    </ul>
+                    <h3><a href="./market-structures.html">Market Structures</a></h3>
+                    <ul>
+                        <li><a href="./nature-of-competition.html"> Nature of Competition</a></li>
+                        <li><a href="./features-of-perfect-competition.html">Features of Perfect Competition </a></li>
+                        <li><a href="./monopoly.html">Monopoly</a></li>
+                        <li><a href="./oligopoly.html">Oligopoly</a></li>
+                        <li><a href="./monopolistic-competition.html">Monopolistic Competition</a></li>
+                        <li><a href="#"> </a></li>
+
+                    </ul>
+                    <h3><a href="./pricing.html">Pricing</a></h3>
+                    <ul>
+
+                        <li><a href="./types-of-pricing.html"> Types of Pricing</a></li>
+                        <li><a href="./product-life-cycle-based-pricing.html">Product Life Cycle Based Pricing </a></li>
+                        <li><a href="./break-even-analysis.html">Break Even Analysis </a></li>
+                        <li><a href="./cost-volumn-profit-analysis.html">Cost Volume Profit Analysis </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+
+                    </ul>
+
+
+                </ul>
+            </div>
+
+            <div class="main">
+                <div class="c1">Returns To Scale</div>
+
+                <p>The concept of variable proportions is a short-run phenomenon as in these period fixed factors cannot
+                    be changed and all factors cannot be changed. On the other hand in the long-term all factors can be
+                    changed as made variable. When we study the changes in output when all factors or inputs are
+                    changed, we study returns to scale. An increase in the scale means that all inputs or factors are
+                    increased in the same proportion. In variable proportions, the cooperating factors may be increased
+                    or decreased and one faster (Ex. Land in agriculture (or) machinery in industry) remains constant so
+                    that the changes in proportion among the factors result in certain changes in output. In returns to
+                    scale, all the necessary factors or production are increased or decreased to the same extent so that
+                    whatever the scale of production, the proportion among the factors remains the same.</p>
+
+                <strong>Assumptions</strong>
+                <ol>
+                    <li>Technique of production is unchanged</li>
+                    <li>All units of factors are homogeneous</li>
+                    <li>Returns are measured in physical terms</li>
+                </ol>
+
+                <p>When a firm expands, its scale increases all its inputs proportionally, then technically there are
+                    three possibilities.</p>
+
+                <ol>
+                    <li><strong>Law of increasing returns to scale:</strong> If a proportionate/percentage increase in
+                        the output is larger than the proportionate/percentage increase in inputs, there are increasing
+                        returns.
+                        <br>For example: If a 5% increase in inputs, results in 10% increase in the output, a firm is
+                        said to attain increased returns.
+                        <figure class="image">
+                            <picture>
+
+                                <a href="https://i.ibb.co/98bZWFf/return-to-scale1.png">
+                                    <img src="https://i.ibb.co/98bZWFf/return-to-scale1.png" alt="return-to-scale1"
+                                        border="0" sizes=" (max-width: 660px) 100vw, 660px"></a>
+                            </picture>
+                        </figure>
+
+                        <br>If PFC > 1, it means increasing returns to scale
+                        <br>If PFC = 1, it means constant returns to scale
+                        <br>If PFC < 1, it means decreasing returns to scale</li>
+                            <figure class="image">
+                                <picture>
+
+                                    <a href="https://i.ibb.co/hDk6LjV/return-to-scale2.png">
+                                        <img src="https://i.ibb.co/hDk6LjV/return-to-scale2.png" alt="return-to-scale2"
+                                            border="0" sizes=" (max-width: 660px) 100vw, 660px"></a>
+                                </picture>
+                            </figure>
+
+                    <li><strong>Law of constant returns to scale:</strong> If the proportionate increase in all the
+                        inputs is equal to the proportionate increase in output, then situation of constant returns to
+                        scale occurs.
+
+
+                        <br>For example: If the inputs are increased at 10% and if the resultant output also increases a
+                        10% then the organization is said to achieve constant returns to scale.
+                        <figure class="image">
+                            <picture>
+
+                                <a href="https://i.ibb.co/mRRcjjt/return-to-scale3.png">
+                                    <img src="https://i.ibb.co/mRRcjjt/return-to-scale3.png" alt="return-to-scale3"
+                                        border="0" sizes=" (max-width: 660px) 100vw, 660px"></a>
+                            </picture>
+                        </figure>
+                    </li>
+                    <li><strong>Law of decreasing returns to scale:</strong> If the proportionate increase in output is
+                        less than the proportionate increase in input, then a situation of decreasing returns to scale
+                        occurs.
+
+
+
+                        <br>For example: If the inputs are increased by 10% and if the resultant output increases only
+                        by 5% then the organization is said to achieve decreasing returns to scale.
+                        <figure class="image">
+                            <picture>
+
+                                <a href="https://i.ibb.co/t8XNW0W/return-to-scale4.png">
+                                    <img src="https://i.ibb.co/t8XNW0W/return-to-scale4.png" alt="return-to-scale4"
+                                        border="0" sizes="(max-width: 660px) 100vw, 660px"></a>
+                            </picture>
+                        </figure>
+                    </li>
+                </ol>
+
+                <p>
+                <figure class="image">
+                    <picture>
+
+                        <a href="https://i.ibb.co/L9F8TW2/return-to-scale5.png">
+                            <img src="https://i.ibb.co/L9F8TW2/return-to-scale5.png" alt="return-to-scale5" border="0"
+                                sizes="(max-width: 660px) 100vw, 660px"></a>
+                    </picture>
+                </figure>
+
+                From the above table it is clear that with 1 unit of capital and 3 units of labor, the firm produces
+                50 units of output. When the inputs are doubled 2 units of capital and 6 units of labor, the output
+                has gone up to 120 units. Thus when inputs are increased by 100%, the output has increased by 140%.
+                That is, output has increased by more than double. This is governed by law of increasing returns to
+                scale.</p>
+                <p>When the inputs are further doubled that is to 4 units of capital and 12 units of labor, the output
+                    has gone to 240 units. Thus, when inputs are increased by 100%., the output has increased by 100%.
+                    That is, output has doubled. This is governed by law of constant returns to scale.</p>
+                <p>When the inputs further doubled, that is, to 8 units of capital and 24 units of labor, the output
+                    has gone up to 360 units. Thus, when inputs are increased by 100%, the output has increased by only
+                    50%. This is governed by law of decreasing returns to scale.</p>
+
+
+
+
+
+
+
+
+            </div>
+            <div class="extra">
+                <!----<h1>Query Box</h1>
+
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="011bd98a-293e-4d49-a2a4-c693ecea3738">
+                    <label for="name">Your Name:</label>
+                    <input type="text" name="name" required>
+
+                    <label for="email">Your Email:</label>
+                    <input type="email" name="email" required>
+
+                    <label for="comment">Your Query:</label>
+                    <textarea name="Query" rows="4" required></textarea>
+
+                    <button type="submit">Submit Query</button>
+                </form>-->
+            </div>
+        </div>
+
+
+        <footer>
+            <div class="footer-content">
+                <div class="about" id="about">
+                    <f3><b>About:</b></f3>
+                    <p>Welcome to cmrTpoint, the official academic tutorial platform of students! We provide certified
+                        answers, reliable educational content, and continuously update our platform to enhance your
+                        learning
+                        experience. With the collaboration of students and faculty guidance, cmrTpoint is committed to
+                        academic excellence and innovation.</p>
+                </div>
+                <div class="contact" id="contact">
+                    <f3><b>Contact:</b></f3>
+                    <p>Email: udayin475@gmail.com</p>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2024 Your @udayusr. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

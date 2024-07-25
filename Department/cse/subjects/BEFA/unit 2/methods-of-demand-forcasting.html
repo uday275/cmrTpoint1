@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methods of Forecasting - cmrTpoint</title>
+    <meta name="description"
+        content="Explore various methods of forecasting demand, including survey methods, statistical methods, and other techniques. Understand how to use buyer surveys, sales force opinions, trend projections, time series analysis, and more for effective demand forecasting.">
+    <meta name="keywords"
+        content="demand forecasting methods, survey methods, statistical methods, trend projection, time series analysis, moving average, exponential smoothing, correlation and regression, barometric techniques">
+    <meta name="author" content="Your Name">
+    <link rel="icon" type="image/x-icon" href="../../../../../assets/media/icon.png">
+    <link rel="stylesheet" href="../../../../../assets/style.css">
+    <link rel="stylesheet" href="../../../../../assets/mstyle.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+
+
+<body>
+    <div>
+        <div class="menu-bar">
+            <ul>
+                <a href="../../../../../index.html" style="display: inline-block;">
+                    <img src="../../../../../assets/media/logo1.0.png" alt="Logo" class="logo"
+                        style="width: 50px; height:40px ;">
+                </a>
+
+
+                <li class=""><a href="../../../../cse.html">Home</a></li>
+                <li class=""><a href="../befa.html">BEFA</a></li>
+                <li class="hide-desktop show-mobile"> <a href="../unit 2/topic2.html">☰</a></li>
+
+                <li><a href="../unit 1/unit1.html">Unit-1</a></li>
+                <li class="active"><a href="./unit2.html">Unit-2</a></li>
+                <li><a href="../unit 3/unit3.html">Unit-3</a></li>
+                <li><a href="../unit 4/unit4.html">Unit-4</a></li>
+                <li><a href="../unit 5/unit5.html">Unit-5</a></li>
+            </ul>
+        </div>
+        <script>
+            // Function to check viewport size and toggle classes accordingly
+            function toggleClasses() {
+                var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+                var elements = document.querySelectorAll('.hide-desktop, .show-mobile');
+
+                if (viewportWidth >= 768) {
+                    elements.forEach(function (element) {
+                        element.classList.remove('hide-desktop');
+                        element.classList.add('show-mobile');
+                    });
+                } else {
+                    elements.forEach(function (element) {
+                        element.classList.remove('show-mobile');
+                        element.classList.add('hide-desktop');
+                    });
+                }
+            }
+
+            // Call toggleClasses function when the page loads and when it is resized
+            window.onload = toggleClasses;
+            window.onresize = toggleClasses;
+        </script>
+
+        <div class="inbox">
+            <div class="sidebar">
+                <h2><a href="./demand-analysis.html" class="">Demand Analysis</a></h2>
+                <ul>
+                    <li><a href="./elasticity.html" class="">Elasticity</a></li>
+                    <li><a href="./types-of-elasticity.html">Types fo Elasticity </a></li>
+                    <li><a href="./law-of-demand.html">Law of Demand </a></li>
+                    <li><a href="./measurement-and-significance-of-elasticity-of-demand.html">Measurement and
+                            Significance of Elasticity of Demand </a></li>
+                    <li><a href="./factors-affecting-elasticity-of-demand.html">Factors Affecting Elasticity of
+                            Demand </a></li>
+                    <li><a href="./elasticity-of-demand-in-decision-making.html">Elasticity of Demand in
+                            Decision Making </a></li>
+                    <li><a href="./demand-forcasting.html">Demand Forecasting </a></li>
+                    <li><a href="./steps-in-demand-forecasting.html">Steps in Demand Forecasting </a></li>
+                    <li><a href="./methods-of-demand-forcasting.html" class="active">Methods of Demand Forecasting</a>
+                    </li>
+                    <li><a href="#"> </a></li>
+                    <li><a href="#"> </a></li>
+                    <li><a href="#"> </a></li>
+                    <li><a href="#"> </a></li>
+
+                    <h3><a href="./supply-analysis.html">Supply Analysis</a></h3>
+                    <ul>
+                        <li><a href="./determinants-of-supply.html">Determinants of Supply </a></li>
+                        <li><a href="./supply-function.html">Supply Function & Law of Supply </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+
+                    </ul>
+
+                </ul>
+            </div>
+
+            <div class="main">
+                <c1 class="c1">Methods Of Forecasting</c1>
+                <p>Several methods are employed for forecasting demand. All these methods can be grouped under survey
+                    method, statistical method and other methods. Survey methods and statistical methods are further
+                    subdivided in to different categories.
+                <figure class="image">
+                    <picture>
+
+                        <a href="https://i.ibb.co/K0708Sz/demand-forcast.jp"> <img
+                                src="https://i.ibb.co/K0708Sz/demand-forcast.jpg" alt="demand-forcast"
+                                sizes="(max-width: 660px) 100vw, 660px"></a>
+                    </picture>
+                </figure>
+
+                </p>
+
+                <c1 class="c1">I. Survey Method</c1>
+
+
+                <p><strong>A. Survey of Buyers Intention:</strong></p>
+                <p>To anticipate what buyers are likely to do under a given set of circumstances, a most useful source
+                    of information would be the buyers themselves. It is better to draw a list of potential buyers.
+                    Approach each buyer to ask how much does he plans to buy of the given product at a given point of
+                    time under particular conditions</p>
+                <p>1. <strong>Census Method:</strong> Surveying all buyers, which is comprehensive but time-consuming
+                    and costly.</p>
+                <p>2. <strong>Sample Method:</strong> Surveying a representative group of buyers, which is faster and
+                    more cost-effective. Normally involves using questionnaires.</p>
+
+                <p><strong>B. Sales Force Opinions:</strong></p>
+                <p>Salespeople provide insights into buyer behavior based on their interactions, utilizing quick methods
+                    like telephone, fax, or video-conferences.</p>
+                <c1 class="c1">II. Statistical Methods</c1>
+
+                <p><strong>A. Trend Projection Methods:</strong></p>
+                <p>1. <strong>Trend Line by Observation:</strong> Estimating trends by plotting actual sales data and
+                    projecting future trends based on visual observation.</p>
+
+                <p><strong>2. Least Squares Method:</strong></p>
+                <p>Statistical formulas are used to determine the trend line that best fits the data, assuming a
+                    proportional change in sales over time. The linear trend equation is: S = x + y(T), where S is
+                    sales, T is the year number, x and y are calculated from past data.</p>
+                <p>Equations:</p>
+                <p>ΣS = Nx + yΣT</p>
+                <p>ΣST = xΣT + yΣT2</p>
+                <p>Where N is the number of years.</p>
+
+                <p><strong>3. Time Series Analysis:</strong></p>
+                <p>Forecasting future values based on historical data collected at successive intervals of time. Time
+                    series include components like Secular trend (long-term), Seasonal trend, Cyclical trend (business
+                    cycle), and Irregular trend (random variations).</p>
+
+                <p><strong>4. Moving Average Method:</strong></p>
+                <p>Y = T + S + C + I</p>
+                <p>Where Y is future sales, T is Secular trend, S is Seasonal trend, C is Cyclical trend, and I is
+                    Irregular trend. This method computes averages of past events to predict future events, with the
+                    average adjusting based on the number of years selected.</p>
+
+                <p><strong>5. Exponential Smoothing:</strong></p>
+                <p>The most popular technique for short-run forecasts, giving higher weights to recent values and lower
+                    weights to distant past values. Formula:</p>
+                <p>Formula goes here...</p>
+                <figure class="image">
+                    <picture>
+
+                        <a href="https://i.ibb.co/K9ffNGW/demand-forcast1.jpg"> <img
+                                src="https://i.ibb.co/K9ffNGW/demand-forcast1.jpg" alt="demand-forcast1"
+                                sizes="(max-width: 660px) 100vw, 660px"></a>
+                    </picture>
+                </figure>
+
+                <p><strong>C. Barometric Techniques:</strong></p>
+                <p>Barometric techniques use one set of data to predict another set, such as using a relevant indicator
+                    (barometer) to forecast demand for a product or service. For example, demand for cable TV might be
+                    linked to the number of new houses occupied in a given area.</p>
+
+                <p><strong>D. Correlation and Regression Method:</strong></p>
+                <p>Correlation and regression are statistical techniques to measure the degree of association between
+                    two variables, like sales and advertisement expenditure. A correlation coefficient measures the
+                    extent of correlation: +1 for perfect positive correlation, -1 for perfect negative correlation, and
+                    0 for no correlation.</p>
+                <p>In regression analysis, an equation is estimated to best fit the observations of dependent and
+                    independent variables. The equation Y = a + bX forecasts the dependent variable (Y) based on the
+                    independent variable (X).</p>
+                <p>Equations:</p>
+                <p>ΣY = Na + bΣX</p>
+                <p>ΣXY = aΣX + bΣX<sup>2</sup></p>
+                <c1 class="c1">III. Other Methods</c1>
+
+                <p>a) <strong>Experts Opinion:</strong></p>
+                <p>Experts are well-informed individuals who provide valuable insights without vested interests. Their
+                    opinions serve as an additional source of information for forecasting demand.</p>
+
+                <p>b) <strong>Test Marketing:</strong></p>
+                <p>Manufacturers often conduct test marketing in a limited market to gauge consumer reactions before a
+                    full-scale product launch. This helps in refining the product and predicting sales in new markets or
+                    distribution channels.</p>
+
+                <p>c) <strong>Controlled Experiments:</strong></p>
+                <p>In controlled experiments, major factors influencing demand are manipulated to suit different
+                    customer segments. This method helps in identifying the most appealing product configurations or
+                    pricing strategies within targeted markets.</p>
+
+                <p>d) <strong>Judgment Approach:</strong></p>
+                <p>When none of the above methods directly apply, management relies on its own judgment to forecast
+                    demand based on experience and qualitative assessments.</p>
+
+            </div>
+            <div class="extra">
+                <!----<h1>Query Box</h1>
+
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="011bd98a-293e-4d49-a2a4-c693ecea3738">
+                    <label for="name">Your Name:</label>
+                    <input type="text" name="name" required>
+
+                    <label for="email">Your Email:</label>
+                    <input type="email" name="email" required>
+
+                    <label for="comment">Your Query:</label>
+                    <textarea name="Query" rows="4" required></textarea>
+
+                    <button type="submit">Submit Query</button>
+                </form>-->
+            </div>
+        </div>
+
+
+        <footer>
+            <div class="footer-content">
+                <div class="about" id="about">
+                    <f3><b>About:</b></f3>
+                    <p>Welcome to cmrTpoint, the official academic tutorial platform of students! We provide certified
+                        answers, reliable educational content, and continuously update our platform to enhance your
+                        learning
+                        experience. With the collaboration of students and faculty guidance, cmrTpoint is committed to
+                        academic excellence and innovation.</p>
+                </div>
+                <div class="contact" id="contact">
+                    <f3><b>Contact:</b></f3>
+                    <p>Email: udayin475@gmail.com</p>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2024 Your @udayusr. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

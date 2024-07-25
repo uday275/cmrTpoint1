@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Production Function - cmrTpoint</title>
+    <meta name="description"
+        content="Learn about the production function, which expresses the relationship between physical inputs and outputs in economics. Understand its mathematical representation, definitions by Samuelson and Michael R Baye, and its key assumptions.">
+    <meta name="keywords"
+        content="production function, inputs, outputs, economics, mathematical model, Samuelson, Michael R Baye, assumptions, technology, production, firm">
+    <meta name="author" content="Your Name">
+
+    <link rel="icon" type="image/x-icon" href="../../../../../assets/media/icon.png">
+    <link rel="stylesheet" href="../../../../../assets/style.css">
+    <link rel="stylesheet" href="../../../../../assets/mstyle.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+
+
+
+<body>
+    <div>
+        <div class="menu-bar">
+            <ul>
+                <a href="../../../../../index.html" style="display: inline-block;">
+                    <img src="../../../../../assets/media/logo1.0.png" alt="Logo" class="logo"
+                        style="width: 50px; height:40px ;">
+                </a>
+
+
+                <li class=""><a href="../../../../cse.html">Home</a></li>
+                <li class=""><a href="../befa.html">BEFA</a></li>
+                <li class="hide-desktop show-mobile"> <a href="../unit 3/topic3.html">☰</a></li>
+
+                <li><a href="../unit 1/unit1.html">Unit-1</a></li>
+                <li><a href="../unit 2/unit2.html">Unit-2</a></li>
+                <li class="active"><a href="./unit3.html">Unit-3</a></li>
+                <li><a href="../unit 4/unit4.html">Unit-4</a></li>
+                <li><a href="../unit 5/unit5.html">Unit-5</a></li>
+            </ul>
+        </div>
+        <script>
+            // Function to check viewport size and toggle classes accordingly
+            function toggleClasses() {
+                var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+                var elements = document.querySelectorAll('.hide-desktop, .show-mobile');
+
+                if (viewportWidth >= 768) {
+                    elements.forEach(function (element) {
+                        element.classList.remove('hide-desktop');
+                        element.classList.add('show-mobile');
+                    });
+                } else {
+                    elements.forEach(function (element) {
+                        element.classList.remove('show-mobile');
+                        element.classList.add('hide-desktop');
+                    });
+                }
+            }
+
+            // Call toggleClasses function when the page loads and when it is resized
+            window.onload = toggleClasses;
+            window.onresize = toggleClasses;
+        </script>
+
+        <div class="inbox">
+            <div class="sidebar">
+                <h2><a href="./production-analysis.html" class="">Production Analysis</a></h2>
+                <ul>
+
+                    <li><a href="./factors-of-production.html">Factors of Production </a></li>
+                    <li><a href="./production-function.html" class="active"> Production Function</a></li>
+                    <li><a href="./production-function-with-one-variable.html"> Production Function with One
+                            Variable Input</a></li>
+                    <li><a href="./two-variable-inputs.html">Two variable Inputs </a></li>
+                    <li><a href="./returns-to-scale.html">Returns to scale </a></li>
+                    <li><a href="./different-types-of-production.html"> Different Types of Production
+                            Function</a></li>
+                    <li><a href="#"> </a></li>
+                    <li><a href="#"> </a></li>
+
+
+                    <h3><a href="./cost-analysis.html">Cost Analysis</a></h3>
+                    <ul>
+
+                        <li><a href="./types-of-cost.html">Types of Costs </a></li>
+                        <li><a href="./short-run-and-long-rub-cost-functions.html">Short Run and Long Run Cost Functions
+                            </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+
+                    </ul>
+                    <h3><a href="./market-structures.html">Market Structures</a></h3>
+                    <ul>
+                        <li><a href="./nature-of-competition.html"> Nature of Competition</a></li>
+                        <li><a href="./features-of-perfect-competition.html">Features of Perfect Competition </a></li>
+                        <li><a href="./monopoly.html">Monopoly</a></li>
+                        <li><a href="./oligopoly.html">Oligopoly</a></li>
+                        <li><a href="./monopolistic-competition.html">Monopolistic Competition</a></li>
+                        <li><a href="#"> </a></li>
+
+                    </ul>
+                    <h3><a href="./pricing.html">Pricing</a></h3>
+                    <ul>
+
+                        <li><a href="./types-of-pricing.html"> Types of Pricing</a></li>
+                        <li><a href="./product-life-cycle-based-pricing.html">Product Life Cycle Based Pricing </a></li>
+                        <li><a href="./break-even-analysis.html">Break Even Analysis </a></li>
+                        <li><a href="./cost-volumn-profit-analysis.html">Cost Volume Profit Analysis </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+
+                    </ul>
+
+
+                </ul>
+            </div>
+
+            <div class="main">
+                <div class="c1">Production Function</div>
+
+                <p>The production function expresses a functional relationship between physical inputs and physical
+                    outputs of a firm at any particular time period. The output is thus a function of inputs. So,
+                    production function is an input – output relationship. Mathematically production function can be
+                    written as:</p>
+
+                <p>Q = f(L1, L2, C, O, T)</p>
+                <p>Let's denote:</p>
+                <ul>
+                    <li><strong>Q</strong>: Output</li>
+                    <li><strong>f</strong>: Function of <strong>L<sub>1</sub></strong> (Land)</li>
+                    <li><strong>L<sub>2</sub></strong>: Labour</li>
+                    <li><strong>C</strong>: Capital</li>
+                    <li><strong>O</strong>: Organization</li>
+                    <li><strong>T</strong>: Technology</li>
+                </ul>
+
+                <p>Here output is the function of inputs. Hence output becomes the dependent variable and inputs are the
+                    independent variables.</p>
+
+                <strong>Definition:</strong>
+
+                <p>Samuelson defines the production function as “The technical relationship which reveals the maximum
+                    amount of output capable of being produced by each and every set of inputs.”</p>
+
+                <p>Michael R Baye defines the production function as “That function which defines the maximum amount of
+                    output that can be produced with a given set of inputs.”</p>
+
+                <strong>Assumptions:</strong>
+
+                <p>Production function has the following assumptions:</p>
+
+                <ol>
+                    <li>The production function is related to a particular period of time.</li>
+                    <li>There is no change in technology.</li>
+                    <li>The producer is using the best techniques available.</li>
+                    <li>The factors of production are divisible.</li>
+                    <li>Production function can be fitted to a short run or to long run.</li>
+                </ol>
+                <figure class="image">
+                    <picture>
+
+                        <a href="https://i.ibb.co/Njg3pPn/production-function.jpg">
+                            <img src="https://i.ibb.co/Njg3pPn/production-function.jpg" alt="production-function"
+                                border="0" sizes="(max-width: 660px) 100vw, 660px"></a>
+                    </picture>
+                </figure>
+
+
+
+
+
+
+
+
+
+            </div>
+            <div class="extra">
+                <!----<h1>Query Box</h1>
+
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="011bd98a-293e-4d49-a2a4-c693ecea3738">
+                    <label for="name">Your Name:</label>
+                    <input type="text" name="name" required>
+
+                    <label for="email">Your Email:</label>
+                    <input type="email" name="email" required>
+
+                    <label for="comment">Your Query:</label>
+                    <textarea name="Query" rows="4" required></textarea>
+
+                    <button type="submit">Submit Query</button>
+                </form>-->
+            </div>
+        </div>
+
+
+        <footer>
+            <div class="footer-content">
+                <div class="about" id="about">
+                    <f3><b>About:</b></f3>
+                    <p>Welcome to cmrTpoint, the official academic tutorial platform of students! We provide certified
+                        answers, reliable educational content, and continuously update our platform to enhance your
+                        learning
+                        experience. With the collaboration of students and faculty guidance, cmrTpoint is committed to
+                        academic excellence and innovation.</p>
+                </div>
+                <div class="contact" id="contact">
+                    <f3><b>Contact:</b></f3>
+                    <p>Email: udayin475@gmail.com</p>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2024 Your @udayusr. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demand Analysis - cmrTpoint</title>
+    <meta name="description"
+        content="Understand demand analysis in economics, including definitions, demand functions, determinants of demand, and factors influencing consumer behavior. Explore the key elements like price, income, related goods, tastes, and more.">
+    <meta name="keywords"
+        content="demand analysis, economic demand, demand function, determinants of demand, consumer behavior, price, income, related goods, tastes, wealth, population, government policy, expectations, climate, business conditions">
+    <meta name="author" content="Your Name">
+    <link rel="icon" type="image/x-icon" href="../../../../../assets/media/icon.png">
+    <link rel="stylesheet" href="../../../../../assets/style.css">
+    <link rel="stylesheet" href="../../../../../assets/mstyle.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+
+<body>
+    <div>
+        <div class="menu-bar">
+            <ul>
+                <a href="../../../../../index.html" style="display: inline-block;">
+                    <img src="../../../../../assets/media/logo1.0.png" alt="Logo" class="logo"
+                        style="width: 50px; height:40px ;">
+                </a>
+
+
+                <li class=""><a href="../../../../cse.html">Home</a></li>
+                <li class=""><a href="../befa.html">BEFA</a></li>
+                <li class="hide-desktop show-mobile"> <a href="../unit 2/topic2.html">☰</a></li>
+
+                <li><a href="../unit 1/unit1.html">Unit-1</a></li>
+                <li class="active"><a href="./unit2.html">Unit-2</a></li>
+                <li><a href="../unit 3/unit3.html">Unit-3</a></li>
+                <li><a href="../unit 4/unit4.html">Unit-4</a></li>
+                <li><a href="../unit 5/unit5.html">Unit-5</a></li>
+            </ul>
+        </div>
+        <script>
+            // Function to check viewport size and toggle classes accordingly
+            function toggleClasses() {
+                var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+                var elements = document.querySelectorAll('.hide-desktop, .show-mobile');
+
+                if (viewportWidth >= 768) {
+                    elements.forEach(function (element) {
+                        element.classList.remove('hide-desktop');
+                        element.classList.add('show-mobile');
+                    });
+                } else {
+                    elements.forEach(function (element) {
+                        element.classList.remove('show-mobile');
+                        element.classList.add('hide-desktop');
+                    });
+                }
+            }
+
+            // Call toggleClasses function when the page loads and when it is resized
+            window.onload = toggleClasses;
+            window.onresize = toggleClasses;
+        </script>
+
+        <div class="inbox">
+            <div class="sidebar">
+                <h2><a href="./demand-analysis.html" class="active">Demand Analysis</a></h2>
+                <ul>
+                    <li><a href="./elasticity.html" class="">Elasticity</a></li>
+                    <li><a href="./types-of-elasticity.html">Types fo Elasticity </a></li>
+                    <li><a href="./law-of-demand.html">Law of Demand </a></li>
+                    <li><a href="./measurement-and-significance-of-elasticity-of-demand.html">Measurement and
+                            Significance of Elasticity of Demand </a></li>
+                    <li><a href="./factors-affecting-elasticity-of-demand.html">Factors Affecting Elasticity of
+                            Demand </a></li>
+                    <li><a href="./elasticity-of-demand-in-decision-making.html">Elasticity of Demand in
+                            Decision Making </a></li>
+                    <li><a href="./demand-forcasting.html">Demand Forecasting </a></li>
+                    <li><a href="./steps-in-demand-forecasting.html">Steps in Demand Forecasting </a></li>
+                    <li><a href="./methods-of-demand-forcasting.html">Methods of Demand Forecasting</a></li>
+                    <li><a href="#"> </a></li>
+                    <li><a href="#"> </a></li>
+                    <li><a href="#"> </a></li>
+                    <li><a href="#"> </a></li>
+
+                    <h3><a href="./supply-analysis.html">Supply Analysis</a></h3>
+                    <ul>
+                        <li><a href="./determinants-of-supply.html">Determinants of Supply </a></li>
+                        <li><a href="./supply-function.html">Supply Function & Law of Supply </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+
+                    </ul>
+
+                </ul>
+            </div>
+
+            <div class="main">
+                <c1 class="c1">Demand Analysis</c1>
+
+                <P>In common parlance, demand means the desire for an object. But in economics demand is something more
+                    than this. According to Stonier and Hague, "Demand in economics means demand backed up by enough
+                    money to pay for the goods demanded". This means that the demand becomes effective only if it is
+                    backed by the purchasing power. In addition to this, there must be willingness to buy a commodity.
+                </P>
+
+                <P>Thus demand in economics means the desire backed by the willingness to buy a commodity and the
+                    purchasing power to pay.</P>
+
+                <P>In the words of Benham, "The demand for anything at a given price is the amount of it which will be
+                    bought per unit of time at that price".</P>
+
+                <P>Hence, demand refers to the amount of commodity which an individual consumer is willing to purchase
+                    at a given price in a given period. The demand is said to exist when the following three conditions
+                    are fulfilled:</P>
+
+                <P><strong>1. Desire to purchase</strong></P>
+
+                <P><strong>2. Ability to pay</strong></P>
+
+                <P><strong>3. Willingness to pay</strong></P>
+
+                <P>Ex: A beggar may have desire to purchase a car but he cannot pay money for it.</P>
+
+                <P>Ex: A miser does not purchase a car but he can pay money for it.</P>
+                <c1 class="c1">Demand Function</c1>
+
+
+
+                <P>Demand function is a function which describes a relationship between one variable and its
+                    determinants. The demand function for a good relates the quantity of good which consumers demand
+                    during a given period to the factors which influence the demand. Quantity demanded is the dependent
+                    variable and all the factors are independent variables. The factors can be built up into a demand
+                    function. The demand function can be mathematically expressed as follows:</P>
+
+                <P><strong>Q = f(P, I, T, P<sub>1</sub>..P<sub>n</sub>, EP, EI, A, O)</strong></P>
+
+                <P>Q = Quantity demanded <br>
+                    f = Function of <br>
+                    P = Price of goods itself <br>
+                    I = Income of consumers <br>
+                    T = Taste and preferences <br>
+                    P<sub>1</sub>..P<sub>n</sub> = Price of related goods <br>
+                    EP = Expectation about future price <br>
+                    EI = Expectation about future income <br>
+                    A = Advertisement <br>
+                    O = Other factors</P>
+
+                <c1 class="c1">Determinants Of Demand</c1>
+                <P>There are several factors or determinants that affect the individual demand and market demand for a
+                    product. These factors are economic, social as well as political factors. The effect of all the
+                    factors on the amount demanded for the commodity is called Demand Function. These factors are as
+                    follows:</P>
+
+                <P><strong>1. Price of the Commodity:</strong><br>
+                    The most important factor affecting amount demanded is the price of the commodity. The amount of a
+                    commodity demanded at a particular price is more properly called price demand. The relation between
+                    price and demand is called the Law of Demand. The demand for a commodity varies inversely with its
+                    price. A decrease in price increases the purchasing power of consumers and an increase in the price
+                    decreases the purchasing power of the consumers.</P>
+                <figure class="image">
+                    <picture>
+
+                        <a href="#"><img src="https://i.ibb.co/TgjZppD/demand1-0.jpg" alt="demand1-0" border="0"
+                                sizes="(max-width: 660px) 100vw, 660px"></a>
+                    </picture>
+                </figure>
+
+                <P><strong>2. Income of the Consumer:</strong><br>
+                    The second most important factor influencing demand is consumer income. Individual consumer’s income
+                    determines his purchasing ability. When other things remaining constant, if income increases, demand
+                    increases and vice-versa. An increase in income makes an individual to buy many commodities. The
+                    effect of income on demand can be analysed for normal goods, perishable goods and inferior goods.
+                </P>
+
+                <P><strong>a) Normal goods:</strong> Usually, the demand for a normal good goes in the same direction
+                    with consumer’s income i.e., demand for normal goods is directly related to consumer’s income.</P>
+                <figure class="image">
+                    <picture>
+
+                        <a href="#"><img src="https://i.ibb.co/JsbRxnX/demand2.png" alt="demand2" border="0"
+                                sizes="(max-width: 660px) 100vw, 660px"></a>
+                    </picture>
+                </figure>
+
+                <P><strong>b) Perishable goods:</strong> For perishable goods like foods, fruits, meat, vegetables,
+                    milk, etc., whose life is very short, the quantity demanded raises with an increase in income, but
+                    after a certain level it remains constant even though the income raises.</P>
+                <figure class="image">
+                    <picture>
+
+                        <a href="#"><img src="https://i.ibb.co/gJM5F7g/d3.png" alt="d3" border="0"
+                                sizes="(max-width: 660px) 100vw, 660px"></a>
+                    </picture>
+                </figure>
+
+                <P><strong>c) Inferior goods:</strong> The goods for which the demand decreases even though the income
+                    level increases are inferior goods or cheap goods or ordinary goods.</P>
+                <figure class="image">
+                    <picture>
+
+                        <a href="#"><img src="https://i.ibb.co/pyzQ4hP/d4.png" alt="d4" border="0"
+                                sizes="(max-width: 660px) 100vw, 660px"></a>
+                    </picture>
+                </figure>
+
+                <P><strong>3. Prices of related goods:</strong><br>
+                    In a given market, if the price of one good influences the quantity demanded of another good, these
+                    two goods are said to be related goods. Two commodities in a given market are related to each other
+                    either as Substitutes or Complementary goods.</P>
+
+                <P><strong>a. Substitutes:</strong> When a want can be satisfied by alternative similar goods, they are
+                    said to be substitutes to each other. Ex: Tea and Coffee, Santhoor soap and Lux soap, etc. The below
+                    graph indicates that as the price of coffee increases, the demand for tea increases. There is a
+                    direct relation between the price of coffee and the demand for tea.</P>
+                <figure class="image">
+                    <picture>
+
+                        <a href="#"><img src="https://i.ibb.co/SJ704LP/d5.png" alt="d5" border="0"
+                                sizes="(max-width: 660px) 100vw, 660px"></a>
+                    </picture>
+                </figure>
+
+                <P><strong>b. Complementary goods:</strong> When a want can be satisfied by two or more goods in a
+                    combination, these goods are termed as complementary goods. In other words, if the price of one good
+                    increases, the demand for another good will decrease. Ex: Bread and Butter, Pen and Ink, Car and
+                    Petrol, Sugar and Tea, and Shoe and Socks, etc. The below table and graph indicate the indirect
+                    relationship between the price of one good and the demand for another good.</P>
+                <figure class="image">
+                    <picture>
+
+                        <border= href="#"><img src="https://i.ibb.co/Hp0Byx1/d6.png" alt="d6" border="0"
+                                sizes="(max-width: 660px) 100vw, 660px"></a>
+                    </picture>
+                </figure>
+
+
+                <P><strong>4. Tastes and habits of the Consumers:</strong><br>
+                    Irrespective of the price of a good and income levels of consumers, demand for many goods depends on
+                    consumers’ tastes and habits. For example, the demand for ice-creams, chocolates, alcohol, tea,
+                    cigarettes, etc. depends on individual tastes and habits. In cases like these, a strict vegetarian
+                    does not demand meat at any price, whereas a non-vegetarian will buy meat at any price.</P>
+
+                <P><strong>5. Wealth:</strong><br>
+                    The amount demanded of a commodity is also affected by the amount of wealth as well as its
+                    distribution. The wealthier the people are, the higher is the demand for normal commodities. If
+                    wealth is more equally distributed, the demand for necessaries and comforts is more. On the other
+                    hand, if some people are rich while the majority are poor, the demand for luxuries is generally
+                    higher.</P>
+
+                <P><strong>6. Population:</strong><br>
+                    Increase in population increases demand for the necessaries of life. The composition of the
+                    population also affects demand. Composition of population means the proportion of young and old and
+                    children as well as the ratio of men to women. A change in the composition of population has an
+                    effect on the nature of demand for different commodities.</P>
+
+                <P><strong>7. Government Policy:</strong><br>
+                    Government policy affects the demands for commodities through taxation. Taxing a commodity increases
+                    its price and the demand goes down. Similarly, financial help from the government increases the
+                    demand for a commodity while lowering its price.</P>
+
+                <P><strong>8. Expectations regarding future prices and incomes:</strong><br>
+                    If consumers expect changes in the price of a commodity in the future, they will change the demand
+                    at present even when the present price remains the same. Similarly, if consumers expect their
+                    incomes to rise in the near future, they may increase the demand for a commodity just now.</P>
+
+                <P><strong>9. Climate and weather:</strong><br>
+                    The climate of an area and the weather prevailing there has a decisive effect on consumers’ demand.
+                    In cold areas, woolen cloth is demanded. During hot summer days, ice is very much in demand. On a
+                    rainy day, ice cream is not so much demanded.</P>
+
+                <P><strong>10. State of business:</strong><br>
+                    The level of demand for different commodities also depends upon the business conditions in the
+                    country. If the country is passing through boom conditions, there will be a marked increase in
+                    demand. On the other hand, the level of demand goes down during a depression.</P>
+
+
+
+
+
+
+            </div>
+            <div class="extra">
+                <!----<h1>Query Box</h1>
+
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="011bd98a-293e-4d49-a2a4-c693ecea3738">
+                    <label for="name">Your Name:</label>
+                    <input type="text" name="name" required>
+
+                    <label for="email">Your Email:</label>
+                    <input type="email" name="email" required>
+
+                    <label for="comment">Your Query:</label>
+                    <textarea name="Query" rows="4" required></textarea>
+
+                    <button type="submit">Submit Query</button>
+                </form>-->
+            </div>
+        </div>
+
+
+        <footer>
+            <div class="footer-content">
+                <div class="about" id="about">
+                    <f3><b>About:</b></f3>
+                    <p>Welcome to cmrTpoint, the official academic tutorial platform of students! We provide certified
+                        answers, reliable educational content, and continuously update our platform to enhance your
+                        learning
+                        experience. With the collaboration of students and faculty guidance, cmrTpoint is committed to
+                        academic excellence and innovation.</p>
+                </div>
+                <div class="contact" id="contact">
+                    <f3><b>Contact:</b></f3>
+                    <p>Email: udayin475@gmail.com</p>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2024 Your @udayusr. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break Even Analysis - cmrTpoint</title>
+    <meta name="description"
+        content="Understand Break Even Analysis (BEP) and Cost-Volume-Profit (CVP) analysis in business. Learn about fixed costs, variable costs, contribution, margin of safety, and break-even point calculation with examples and a graphical representation.">
+    <meta name="keywords"
+        content="break even analysis, cost volume profit analysis, BEP calculation, break even point, fixed cost, variable cost, contribution, margin of safety, CVP analysis">
+    <meta name="author" content="Your Name">
+    <link rel="icon" type="image/x-icon" href="../../../../../assets/media/icon.png">
+    <link rel="stylesheet" href="../../../../../assets/style.css">
+    <link rel="stylesheet" href="../../../../../assets/mstyle.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+
+
+
+<body>
+    <div>
+        <div class="menu-bar">
+            <ul>
+                <a href="../../../../../index.html" style="display: inline-block;">
+                    <img src="../../../../../assets/media/logo1.0.png" alt="Logo" class="logo"
+                        style="width: 50px; height:40px ;">
+                </a>
+
+
+                <li class=""><a href="../../../../cse.html">Home</a></li>
+                <li class=""><a href="../befa.html">BEFA</a></li>
+                <li class="hide-desktop show-mobile"> <a href="../unit 3/topic3.html">☰</a></li>
+
+                <li><a href="../unit 1/unit1.html">Unit-1</a></li>
+                <li><a href="../unit 2/unit2.html">Unit-2</a></li>
+                <li class="active"><a href="./unit3.html">Unit-3</a></li>
+                <li><a href="../unit 4/unit4.html">Unit-4</a></li>
+                <li><a href="../unit 5/unit5.html">Unit-5</a></li>
+            </ul>
+        </div>
+        <script>
+            // Function to check viewport size and toggle classes accordingly
+            function toggleClasses() {
+                var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+                var elements = document.querySelectorAll('.hide-desktop, .show-mobile');
+
+                if (viewportWidth >= 768) {
+                    elements.forEach(function (element) {
+                        element.classList.remove('hide-desktop');
+                        element.classList.add('show-mobile');
+                    });
+                } else {
+                    elements.forEach(function (element) {
+                        element.classList.remove('show-mobile');
+                        element.classList.add('hide-desktop');
+                    });
+                }
+            }
+
+            // Call toggleClasses function when the page loads and when it is resized
+            window.onload = toggleClasses;
+            window.onresize = toggleClasses;
+        </script>
+
+        <div class="inbox">
+            <div class="sidebar">
+                <h2><a href="./production-analysis.html" class="">Production Analysis</a></h2>
+                <ul>
+
+                    <li><a href="./factors-of-production.html">Factors of Production </a></li>
+                    <li><a href="./production-function.html"> Production Function</a></li>
+                    <li><a href="./production-function-with-one-variable.html"> Production Function with One
+                            Variable Input</a></li>
+                    <li><a href="./two-variable-inputs.html">Two variable Inputs </a></li>
+                    <li><a href="./returns-to-scale.html">Returns to scale </a></li>
+                    <li><a href="./different-types-of-production.html"> Different Types of Production
+                            Function</a></li>
+                    <li><a href="#"> </a></li>
+                    <li><a href="#"> </a></li>
+
+
+                    <h3><a href="./cost-analysis.html">Cost Analysis</a></h3>
+                    <ul>
+
+                        <li><a href="./types-of-cost.html">Types of Costs </a></li>
+                        <li><a href="./short-run-and-long-rub-cost-functions.html">Short Run and Long Run Cost Functions
+                            </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+
+                    </ul>
+                    <h3><a href="./market-structures.html">Market Structures</a></h3>
+                    <ul>
+                        <li><a href="./nature-of-competition.html"> Nature of Competition</a></li>
+                        <li><a href="./features-of-perfect-competition.html">Features of Perfect Competition </a></li>
+                        <li><a href="./monopoly.html">Monopoly</a></li>
+                        <li><a href="./oligopoly.html">Oligopoly</a></li>
+                        <li><a href="./monopolistic-competition.html">Monopolistic Competition</a></li>
+                        <li><a href="#"> </a></li>
+
+                    </ul>
+                    <h3><a href="./pricing.html">Pricing</a></h3>
+                    <ul>
+
+                        <li><a href="./types-of-pricing.html"> Types of Pricing</a></li>
+                        <li><a href="./product-life-cycle-based-pricing.html">Product Life Cycle Based Pricing </a></li>
+                        <li><a href="./break-even-analysis.html" class="active">Break Even Analysis </a></li>
+                        <li><a href="./cost-volumn-profit-analysis.html">Cost Volume Profit Analysis </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+
+                    </ul>
+
+
+                </ul>
+            </div>
+
+            <div class="main">
+                <div class="c1">Break Even Analysis</div>
+
+                <p>BEP analysis is also called as CVP analysis. The BEP can be defined as that level of sales at which
+                    total revenues equals total costs and the net income is equal to zero. This is also known as
+                    no-profit no-loss point. Break-even analysis refers to the analysis of costs and their possible
+                    impact on revenues and the volume of the firm. Hence, it is also called the cost-volume-profit (CVP)
+                    analysis. A firm is said to attain the BEP when its total revenue is equal to total cost (TR=TC).
+                </p>
+
+                <p>The main objective of the Break Even Analysis is not only to spot the BEP but also to develop an
+                    understanding of the relationships of cost, volume, and price within a company’s practical range of
+                    operations.</p>
+
+                <div class="c1">Assumptions of Break-Even Analysis</div>
+
+                <ol>
+                    <li>All costs are divided into fixed and variable.</li>
+                    <li>Fixed costs remain constant whereas variable costs vary.</li>
+                    <li>Selling price remains constant.</li>
+                    <li>There will be no change in the operating efficiency.</li>
+                </ol>
+
+                <div class="c1">Key Terms Used in Break-even Analysis</div>
+
+                <ol>
+                    <li><strong>Fixed Cost (FC):</strong> Fixed costs remain fixed in the short-run. These costs must be
+                        borne by the firm even when there is no production. Example: Rent, Insurance, Depreciation,
+                        permanent employees’ salaries, etc. Fixed cost per unit varies.</li>
+                    <li><strong>Variable Costs (VC):</strong> The costs which vary in direct proportion to the
+                        production/sales volume are called variable costs. Variable cost per unit is fixed. Examples
+                        include cost of direct material, cost of direct labor, direct expenses, operating supplies such
+                        as oil, grease, etc.</li>
+                    <li><strong>Total Cost (TC):</strong> The total of fixed cost and variable costs. TC = FC + VC.</li>
+                    <li><strong>Total Revenue:</strong> The sales amount of goods sold in the market (Selling Price per
+                        unit × Number of units sold).</li>
+                    <li><strong>Contribution:</strong> The excess of sales revenue over variable cost (C = S - V).</li>
+                    <li><strong>P/V Ratio (Profit/Volume Ratio):</strong> The ratio between the contribution and sales.
+                        <figure class="image">
+                            <picture>
+
+                                <a href="https://i.ibb.co/tCXCnm6/break-even-analysis1.png">
+                                    <img src="https://i.ibb.co/tCXCnm6/break-even-analysis1.png" border="0"
+                                        sizes="(max-width: 660px) 100vw, 660px"></a>
+                            </picture>
+                        </figure>
+
+                    </li>
+                    <li><strong>Margin of Safety Sales (M/S Sales):</strong> The excess of actual total sales over
+                        break-even sales.
+                        <figure class="image">
+                            <picture>
+
+                                <a href="https://i.ibb.co/grdCzBr/break-even-analysis2.png">
+                                    <img src="https://i.ibb.co/grdCzBr/break-even-analysis2.png"
+                                        alt="break-even-analysis2" border="0"
+                                        sizes="(max-width: 660px) 100vw, 660px"></a>
+                            </picture>
+                        </figure>
+                    </li>
+                    <li><strong>Break-even Point (BEP):</strong> The point where total revenue is just equal to the
+                        total cost is called Break-even point. At break-even point, there is no profit or no loss to the
+                        business. Break-even point can be calculated in units as well as in sales.
+                        <figure class="image">
+                            <picture>
+
+                                <a href="https://i.ibb.co/ns8gdv0/break-even-analysis4.png">
+                                    <img src="https://i.ibb.co/ns8gdv0/break-even-analysis4.png"
+                                        alt="break-even-analysis4" border="0"
+                                        sizes="(max-width: 660px) 100vw, 660px"></a>
+                            </picture>
+                        </figure>
+
+                    </li>
+                </ol>
+
+                <div class="c1">Break-even Point Calculation</div>
+
+                <p>BEP (in units) = Fixed Cost / (Selling Price per unit - Variable Cost per unit)</p>
+
+                <p>BEP (in sales) = Fixed Cost / Contribution per unit</p>
+
+                <p>Where Contribution per unit = Selling Price per unit - Variable Cost per unit</p>
+
+                <div class="c1">Important Notes:</div>
+
+                <ul>
+                    <li>At BEP sales, Total sales = Total cost (F + V). At this stage, total contribution (S - V) is
+                        equal to fixed cost. So, there is no profit or no loss. Hence, C = F.</li>
+                    <li>Below the BEP sales, total contribution is less than total fixed cost. Hence, C < F.</li>
+                    <li>Beyond BEP sales (M/S sales), since fixed cost is recovered at BEP sales, C = P.</li>
+                    <li>M/S sales = Total sales - BEP sales.</li>
+                </ul>
+                <p><strong>Understanding the Break-even Graph</strong></p>
+                <figure class="image">
+                    <picture>
+
+                        <a href="https://i.ibb.co/9wW9Tq0/break-even-analysis5.png">
+                            <img src="https://i.ibb.co/9wW9Tq0/break-even-analysis5.png" alt="break-even-analysis5"
+                                border="0" sizes="(max-width: 660px) 100vw, 660px"></a>
+                    </picture>
+                </figure>
+
+                <ul>
+                    <li>In the graph:
+                        <ul>
+                            <li>The variable cost line increases with the volume of production and sales.</li>
+                            <li>The total cost line, parallel to the variable cost line, is derived by adding total
+                                fixed costs to the total variable costs.</li>
+                            <li>The total revenue line (TR) starts from point (0) and increases with the volume of
+                                production or sales, intersecting the total cost line at the BEP.</li>
+                            <li>To the right of the BEP is the profit zone and to the left is the loss zone.</li>
+                            <li>A perpendicular from the BEP to the horizontal axis at point ‘M’ shows ‘OM’ as the
+                                quantity produced at ‘OP’ cost at BEP.</li>
+                            <li>The angle formed by the point of intersection of total revenue and total cost lines at
+                                BEP is called the angle of incidence. The greater the angle of incidence, the higher is
+                                the magnitude of profit once the fixed costs are covered.</li>
+                            <li>Margin of Safety (MN) refers to the excess of production or sales over and above the
+                                BEP. The margin of safety is the difference between ON and OM (ON - OM = MN).</li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="c1">Significance Of Break-Even Analysis</div>
+
+                <p>- To ascertain the profit on a particular level of sales volume or a given capacity of production.
+                </p>
+                <p>- To calculate sales required to earn a particular desired level of profit.</p>
+                <p>- To compare the product lines, sales area, method of sale for an individual company.</p>
+                <p>- To compare the efficiency of different firms.</p>
+                <p>- To decide whether to add a particular product to the existing product line or drop one from it.</p>
+                <p>- To decide to „make or buy‟ a given component or spare part.</p>
+                <p>- To decide what promotion mix will yield optimum sales.</p>
+                <p>- To assess the impact of changes in fixed cost, variable cost, or selling price on BEP and profits
+                    during a given period.</p>
+
+                <div class="c1">Limitations Of Break-Even Analysis</div>
+
+                <p>- Break-even point is based on fixed cost, variable cost, and total revenue. A change in one variable
+                    is going to affect the BEP.</p>
+                <p>- All costs cannot be classified into fixed and variable costs; we have semi-variable costs also.</p>
+                <p>- In the case of a multi-product firm, a single chart cannot be of any use. Series of charts have to
+                    be made use of.</p>
+                <p>- It is based on the fixed cost concept and hence holds good only in the short run.</p>
+                <p>- Total cost and total revenue lines are not always straight as shown in the figure. The quantity and
+                    price discounts are the usual phenomena affecting the total revenue line.</p>
+                <p>- Where the business conditions are volatile, BEP cannot give stable results.</p>
+
+                <div class="c1">Problems and Solutions:</div>
+
+                <ol>
+                    <li>
+                        <p>A firm has a fixed cost of Rs. 10,000, selling price per unit is Rs. 5, and variable cost per
+                            unit is Rs. 3.</p>
+                        <p>a. Determine break-even point in terms of volume and also sales value.</p>
+                        <p>b. Calculate the margin of safety considering that the actual production is 8000 units.</p>
+                    </li>
+                </ol>
+
+                <div class="c1">Solution:</div>
+
+                <p><strong>a. Break-even point (in units):</strong></p>
+
+                <p>BEP (in units) = Fixed Cost / Contribution per unit</p>
+
+                <p>Given: Selling price per unit (S) = Rs. 5, Variable cost per unit (V) = Rs. 3</p>
+
+                <p>Contribution per unit = S - V = 5 - 3 = Rs. 2</p>
+
+                <p>BEP (in units) = 10000 / 2 = 5000 units</p>
+
+                <p><strong>b. Break-even point (in sales):</strong></p>
+
+                <p>BEP (in sales) = Fixed Cost / P/V Ratio</p>
+
+                <p>P/V Ratio = (Contribution per unit / Selling price per unit) * 100</p>
+
+                <p>P/V Ratio = (2 / 5) * 100 = 40%</p>
+
+                <p>BEP (in sales) = 10000 / 40% = Rs. 25,000</p>
+
+
+
+
+
+                <p>2. A high-tech rail can carry a maximum of 36,000 passengers per annum at a fare of Rs. 400. The
+                    variable cost per passenger is Rs. 150 while the fixed costs are Rs. 25,00,000 per year.</p>
+                <p>a. Find the break-even point in terms of number of passengers.</p>
+                <p>b. Find the break-even point in terms of fare collections.</p>
+
+
+                <div class="c1">Solution:</div>
+
+                <p><strong>a. Break-even point (in number of passengers):</strong></p>
+
+                <p>BEP (in number of passengers) = Fixed Costs / Contribution per passenger</p>
+
+                <p>Given: Selling price per passenger (S) = Rs. 400, Variable cost per passenger (V) = Rs. 150</p>
+
+                <p>Contribution per passenger = S - V = 400 - 150 = Rs. 250</p>
+
+                <p>BEP (in number of passengers) = 2500000 / 250 = 10000 passengers</p>
+
+                <p><strong>b. Break-even point (in fare collections):</strong></p>
+
+                <p>BEP (in fare collections) = Fixed Costs / P/V Ratio</p>
+
+                <p>P/V Ratio = (Contribution per passenger / Selling price per passenger) * 100</p>
+
+                <p>P/V Ratio = (250 / 400) * 100 = 62.50%</p>
+
+                <p>BEP (in fare collections) = 2500000 / 62.50% = Rs. 40,00,000</p>
+
+                <div class="c1">Problem and Solution:</div>
+
+                <ol>
+                    <li>
+                        <p>Srikanth Enterprises deals in the supply of hardware parts of computers. The following cost
+                            data is available for two successive periods:</p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Year I (Rs.)</th>
+                                    <th>Year II (Rs.)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Sales</td>
+                                    <td>50,000</td>
+                                    <td>1,20,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Fixed costs</td>
+                                    <td>10,000</td>
+                                    <td>20,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Variable cost</td>
+                                    <td>30,000</td>
+                                    <td>60,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>Determine:</p>
+                        <ol type="a">
+                            <li>Break-even point in terms of sales for both years.</li>
+                            <li>Margin of safety for both years.</li>
+                        </ol>
+                    </li>
+                </ol>
+
+                <div class="c1">Solution:</div>
+
+                <p><strong>a. Break-even point (in sales):</strong></p>
+
+                <p><strong>Year I:</strong></p>
+
+                <p>BEP (in sales) = Fixed Costs / P/V Ratio</p>
+
+                <p>P/V Ratio = (Contribution / Sales) * 100</p>
+
+                <p>Contribution = Sales - Variable cost = 50000 - 30000 = Rs. 20000</p>
+
+                <p>P/V Ratio = (20000 / 50000) * 100 = 40%</p>
+
+                <p>BEP (in sales) = 10000 / 40% = Rs. 25,000</p>
+
+                <p><strong>Year II:</strong></p>
+
+                <p>BEP (in sales) = Fixed Costs / P/V Ratio</p>
+
+                <p>Contribution = Sales - Variable cost = 120000 - 60000 = Rs. 60000</p>
+
+                <p>P/V Ratio = (60000 / 120000) * 100 = 50%</p>
+
+                <p>BEP (in sales) = 20000 / 50% = Rs. 40,000</p>
+
+                <p><strong>b. Margin of safety:</strong></p>
+
+                <p><strong>Year I:</strong></p>
+
+                <p>Margin of safety = Actual Sales - BEP Sales</p>
+
+                <p>Margin of safety = 50000 - 25000 = Rs. 25,000</p>
+
+                <p><strong>Year II:</strong></p>
+
+                <p>Margin of safety = Actual Sales - BEP Sales</p>
+
+                <p>Margin of safety = 120000 - 40000 = Rs. 80,000</p>
+
+
+
+
+
+
+            </div>
+            <div class="extra">
+                <!----<h1>Query Box</h1>
+
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="011bd98a-293e-4d49-a2a4-c693ecea3738">
+                    <label for="name">Your Name:</label>
+                    <input type="text" name="name" required>
+
+                    <label for="email">Your Email:</label>
+                    <input type="email" name="email" required>
+
+                    <label for="comment">Your Query:</label>
+                    <textarea name="Query" rows="4" required></textarea>
+
+                    <button type="submit">Submit Query</button>
+                </form>-->
+            </div>
+        </div>
+
+
+        <footer>
+            <div class="footer-content">
+                <div class="about" id="about">
+                    <f3><b>About:</b></f3>
+                    <p>Welcome to cmrTpoint, the official academic tutorial platform of students! We provide certified
+                        answers, reliable educational content, and continuously update our platform to enhance your
+                        learning
+                        experience. With the collaboration of students and faculty guidance, cmrTpoint is committed to
+                        academic excellence and innovation.</p>
+                </div>
+                <div class="contact" id="contact">
+                    <f3><b>Contact:</b></f3>
+                    <p>Email: udayin475@gmail.com</p>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2024 Your @udayusr. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

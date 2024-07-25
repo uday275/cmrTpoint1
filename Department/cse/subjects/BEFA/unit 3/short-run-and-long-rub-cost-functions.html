@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost-Output Relationship - cmrTpoint</title>
+    <meta name="description"
+        content="Learn about the cost-output relationship, which plays a crucial role in determining the optimum production level. Understand how knowledge of this relationship aids in cost control, profit prediction, pricing, and promotion strategies. Explore the distinction between short-run and long-run cost functions, including the classification of costs, cost behavior, and graphical representations.">
+    <meta name="keywords"
+        content="cost-output relationship, short-run cost function, long-run cost function, fixed costs, variable costs, average fixed cost, average variable cost, marginal cost, production economics, cost control, profit prediction, pricing strategies, promotion strategies">
+    <meta name="author" content="Your Name">
+
+    <link rel="icon" type="image/x-icon" href="../../../../../assets/media/icon.png">
+    <link rel="stylesheet" href="../../../../../assets/style.css">
+    <link rel="stylesheet" href="../../../../../assets/mstyle.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+
+
+
+
+<body>
+    <div>
+        <div class="menu-bar">
+            <ul>
+                <a href="../../../../../index.html" style="display: inline-block;">
+                    <img src="../../../../../assets/media/logo1.0.png" alt="Logo" class="logo"
+                        style="width: 50px; height:40px ;">
+                </a>
+
+
+                <li class=""><a href="../../../../cse.html">Home</a></li>
+                <li class=""><a href="../befa.html">BEFA</a></li>
+                <li class="hide-desktop show-mobile"> <a href="../unit 3/topic3.html">☰</a></li>
+
+                <li><a href="../unit 1/unit1.html">Unit-1</a></li>
+                <li><a href="../unit 2/unit2.html">Unit-2</a></li>
+                <li class="active"><a href="./unit3.html">Unit-3</a></li>
+                <li><a href="../unit 4/unit4.html">Unit-4</a></li>
+                <li><a href="../unit 5/unit5.html">Unit-5</a></li>
+            </ul>
+        </div>
+        <script>
+            // Function to check viewport size and toggle classes accordingly
+            function toggleClasses() {
+                var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+                var elements = document.querySelectorAll('.hide-desktop, .show-mobile');
+
+                if (viewportWidth >= 768) {
+                    elements.forEach(function (element) {
+                        element.classList.remove('hide-desktop');
+                        element.classList.add('show-mobile');
+                    });
+                } else {
+                    elements.forEach(function (element) {
+                        element.classList.remove('show-mobile');
+                        element.classList.add('hide-desktop');
+                    });
+                }
+            }
+
+            // Call toggleClasses function when the page loads and when it is resized
+            window.onload = toggleClasses;
+            window.onresize = toggleClasses;
+        </script>
+
+        <div class="inbox">
+            <div class="sidebar">
+                <h2><a href="./production-analysis.html" class="">Production Analysis</a></h2>
+                <ul>
+
+                    <li><a href="./factors-of-production.html">Factors of Production </a></li>
+                    <li><a href="./production-function.html"> Production Function</a></li>
+                    <li><a href="./production-function-with-one-variable.html"> Production Function with One
+                            Variable Input</a></li>
+                    <li><a href="./two-variable-inputs.html">Two variable Inputs </a></li>
+                    <li><a href="./returns-to-scale.html">Returns to scale </a></li>
+                    <li><a href="./different-types-of-production.html"> Different Types of Production
+                            Function</a></li>
+                    <li><a href="#"> </a></li>
+                    <li><a href="#"> </a></li>
+
+
+                    <h3><a href="./cost-analysis.html">Cost Analysis</a></h3>
+                    <ul>
+
+                        <li><a href="./types-of-cost.html">Types of Costs </a></li>
+                        <li><a href="./short-run-and-long-rub-cost-functions.html" class="active">Short Run and Long Run
+                                Cost Functions
+                            </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+
+                    </ul>
+                    <h3><a href="./market-structures.html">Market Structures</a></h3>
+                    <ul>
+                        <li><a href="./nature-of-competition.html"> Nature of Competition</a></li>
+                        <li><a href="./features-of-perfect-competition.html">Features of Perfect Competition </a></li>
+                        <li><a href="./monopoly.html">Monopoly</a></li>
+                        <li><a href="./oligopoly.html">Oligopoly</a></li>
+                        <li><a href="./monopolistic-competition.html">Monopolistic Competition</a></li>
+                        <li><a href="#"> </a></li>
+
+                    </ul>
+                    <h3><a href="./pricing.html">Pricing</a></h3>
+                    <ul>
+
+                        <li><a href="./types-of-pricing.html"> Types of Pricing</a></li>
+                        <li><a href="./product-life-cycle-based-pricing.html">Product Life Cycle Based Pricing </a></li>
+                        <li><a href="./break-even-analysis.html">Break Even Analysis </a></li>
+                        <li><a href="./cost-volumn-profit-analysis.html">Cost Volume Profit Analysis </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+
+                    </ul>
+
+
+                </ul>
+            </div>
+
+            <div class="main">
+                <div class="c1">Cost-Output Relationship</div>
+
+                <p>The cost-output relationship plays an important role in determining the optimum level of production.
+                    Knowledge of the cost-output relationship helps the manager in cost control, profit prediction,
+                    pricing, promotion, etc. Output is an important factor that influences cost. Considering the period,
+                    the cost function can be classified as:</p>
+
+                <div class="c1">I. Short-run Cost Function:</div>
+
+                <p>Under the short-run cost-output relation, costs are classified into fixed costs and variable costs.
+                    Labour is the variable factor while capital is the fixed factor. Total fixed cost remains constant
+                    while variable cost changes with the variation in units of labour. The fixed costs may be
+                    ascertained in terms of total fixed cost and average fixed cost per unit. The relationship of costs
+                    in the short run can be summarized as follows:</p>
+                <figure class="image">
+                    <picture>
+
+                        <a href="https://i.ibb.co/2hwXKQw/cost-output1.png">
+                            <img src="https://i.ibb.co/2hwXKQw/cost-output1.png" alt="cost-output1" border="0"
+                                sizes="(max-width: 660px) 100vw, 660px"></a>
+                    </picture>
+                </figure>
+                <figure class="image">
+                    <picture>
+
+                        <a href="https://i.ibb.co/z6qQ69G/short-run.png">
+                            <img src="https://i.ibb.co/z6qQ69G/short-run.png" alt="short-run" border="0"
+                                sizes="(max-width: 660px) 100vw, 660px"></a>
+                    </picture>
+                </figure>
+
+
+
+                <p>- Total fixed costs remain fixed irrespective of the increase or decrease in production activity.</p>
+                <p>- Average fixed cost per unit declines as the volume of production increases due to spreading fixed
+                    costs over more units.</p>
+                <p>- Total variable cost increases proportionately with production.</p>
+                <p>- Total cost increases with the volume of production.</p>
+                <p>- Average total cost initially decreases up to a certain level of production, then rises, forming a
+                    U-shaped curve.</p>
+                <p>- Marginal cost reflects the change in total cost due to one unit change in output.</p>
+
+                <p>The short-run cost-output relationship can be illustrated graphically as follows:</p>
+
+                <p>- The Average Fixed Cost (AFC) curve slopes downwards continuously as production increases.</p>
+                <p>- The Average Variable Cost (AVC) curve is U-shaped, initially falling and then rising due to the law
+                    of diminishing returns.</p>
+                <p>- The Average Total Cost (ATC) curve initially declines with AVC but rises after a certain production
+                    level.</p>
+                <p>- Marginal Cost (MC) initially decreases with output but later increases steeply.</p>
+
+                <div class="c1">II. Long-run Cost Function:</div>
+
+                <p>Long run refers to that period of time over which all factors are variable. It has no fixed cost.
+                    Over a long period, the size of the plant can be changed, unwanted buildings can be sold, staff can
+                    be increased or reduced. The long run enables the firms to expand and scale their operation by
+                    bringing or purchasing larger quantities of all the inputs. Thus, in the long run, all factors
+                    become variable.</p>
+
+                <p>In the long run, a firm has a number of alternatives regarding the scale of operations. For each
+                    scale of production or plant size, the firm has appropriate short-run average cost curves. The
+                    short-run average cost (SAC) curve applies to only one plant whereas the long-run average cost (LAC)
+                    curve takes into consideration many plants.</p>
+
+                <p>If we assume that there are many plant sizes, each suitable for a certain level of output, we will
+                    get many SAC curves intersecting each other. As the number of plant sizes increases, the points of
+                    intersection of SAC curves will come closer. And, if we assume that there are a large number (say,
+                    an infinite number) of plant sizes, the intersection points will be so near to each other that we
+                    get almost a continuous curve. This continuous curve is known as the Long-run Average Cost (LAC)
+                    curve or the Envelope curve (as it envelopes the family of short-run Average Cost Curves).</p>
+
+                <p>The long-run cost-output relationship is shown graphically with the help of the LAC curve.</p>
+                <figure class="image">
+                    <picture>
+
+                        <a href="https://i.ibb.co/bK0z8Kj/long-run.png">
+                            <img src="https://i.ibb.co/bK0z8Kj/long-run.png" alt="long-run" border="0"
+                                sizes="(max-width: 660px) 100vw, 660px"></a>
+                    </picture>
+                </figure>
+
+                <p>The above figure shows how the LAC curve envelopes several short-run average cost (SAC) curves.
+                    Suppose, the firm is producing an output of OQ1 units on a plant of SAC1, if it wants to produce OQ2
+                    units of output, either it can operate on SAC1 by over-utilizing the SAC1 plant or by acquiring a
+                    bigger size plant SAC2 and operating on it. It will be less costly to operate on SAC2. If it wants
+                    to produce OQ3 units of output, it can operate on the bigger size plant SAC3 at least cost. Q3A3 is
+                    the least cost at the output OQ3 and the firm attains optimum output in the long run at OQ3 level of
+                    output. If it operates on SAC2 to produce OQ3 units of output, the cost will be prohibitively high
+                    being Q3A3. It is to be noted that there is only one short-run average cost curve SAC3 which is
+                    tangential to the long-run average cost curve at its minimum point. All other SAC curves are
+                    tangential to the LAC curves at higher than their minimum average cost points.</p>
+
+
+
+
+
+
+            </div>
+            <div class="extra">
+                <!----<h1>Query Box</h1>
+
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="011bd98a-293e-4d49-a2a4-c693ecea3738">
+                    <label for="name">Your Name:</label>
+                    <input type="text" name="name" required>
+
+                    <label for="email">Your Email:</label>
+                    <input type="email" name="email" required>
+
+                    <label for="comment">Your Query:</label>
+                    <textarea name="Query" rows="4" required></textarea>
+
+                    <button type="submit">Submit Query</button>
+                </form>-->
+            </div>
+        </div>
+
+
+        <footer>
+            <div class="footer-content">
+                <div class="about" id="about">
+                    <f3><b>About:</b></f3>
+                    <p>Welcome to cmrTpoint, the official academic tutorial platform of students! We provide certified
+                        answers, reliable educational content, and continuously update our platform to enhance your
+                        learning
+                        experience. With the collaboration of students and faculty guidance, cmrTpoint is committed to
+                        academic excellence and innovation.</p>
+                </div>
+                <div class="contact" id="contact">
+                    <f3><b>Contact:</b></f3>
+                    <p>Email: udayin475@gmail.com</p>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2024 Your @udayusr. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

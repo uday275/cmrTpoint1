@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Production Function With One Variable Input - cmrTpoint</title>
+    <meta name="description"
+        content="Understand the production function with one variable input, exploring the law of variable proportions, its assumptions, and the three stages of output behavior.">
+    <meta name="keywords"
+        content="production function, variable input, law of variable proportions, law of diminishing returns, economics, fixed inputs, labor, output behavior, assumptions">
+    <meta name="author" content="Your Name">
+
+    <link rel="icon" type="image/x-icon" href="../../../../../assets/media/icon.png">
+    <link rel="stylesheet" href="../../../../../assets/style.css">
+    <link rel="stylesheet" href="../../../../../assets/mstyle.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+
+
+
+
+<body>
+    <div>
+        <div class="menu-bar">
+            <ul>
+                <a href="../../../../../index.html" style="display: inline-block;">
+                    <img src="../../../../../assets/media/logo1.0.png" alt="Logo" class="logo"
+                        style="width: 50px; height:40px ;">
+                </a>
+
+
+                <li class=""><a href="../../../../cse.html">Home</a></li>
+                <li class=""><a href="../befa.html">BEFA</a></li>
+                <li class="hide-desktop show-mobile"> <a href="../unit 3/topic3.html">☰</a></li>
+
+                <li><a href="../unit 1/unit1.html">Unit-1</a></li>
+                <li><a href="../unit 2/unit2.html">Unit-2</a></li>
+                <li class="active"><a href="./unit3.html">Unit-3</a></li>
+                <li><a href="../unit 4/unit4.html">Unit-4</a></li>
+                <li><a href="../unit 5/unit5.html">Unit-5</a></li>
+            </ul>
+        </div>
+        <script>
+            // Function to check viewport size and toggle classes accordingly
+            function toggleClasses() {
+                var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+                var elements = document.querySelectorAll('.hide-desktop, .show-mobile');
+
+                if (viewportWidth >= 768) {
+                    elements.forEach(function (element) {
+                        element.classList.remove('hide-desktop');
+                        element.classList.add('show-mobile');
+                    });
+                } else {
+                    elements.forEach(function (element) {
+                        element.classList.remove('show-mobile');
+                        element.classList.add('hide-desktop');
+                    });
+                }
+            }
+
+            // Call toggleClasses function when the page loads and when it is resized
+            window.onload = toggleClasses;
+            window.onresize = toggleClasses;
+        </script>
+
+        <div class="inbox">
+            <div class="sidebar">
+                <h2><a href="./production-analysis.html" class="">Production Analysis</a></h2>
+                <ul>
+
+                    <li><a href="./factors-of-production.html">Factors of Production </a></li>
+                    <li><a href="./production-function.html"> Production Function</a></li>
+                    <li><a href="./production-function-with-one-variable.html" class="active"> Production Function with
+                            One
+                            Variable Input</a></li>
+                    <li><a href="./two-variable-inputs.html">Two variable Inputs </a></li>
+                    <li><a href="./returns-to-scale.html">Returns to scale </a></li>
+                    <li><a href="./different-types-of-production.html"> Different Types of Production
+                            Function</a></li>
+                    <li><a href="#"> </a></li>
+                    <li><a href="#"> </a></li>
+
+
+                    <h3><a href="./cost-analysis.html">Cost Analysis</a></h3>
+                    <ul>
+
+                        <li><a href="./types-of-cost.html">Types of Costs </a></li>
+                        <li><a href="./short-run-and-long-rub-cost-functions.html">Short Run and Long Run Cost Functions
+                            </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+
+                    </ul>
+                    <h3><a href="./market-structures.html">Market Structures</a></h3>
+                    <ul>
+                        <li><a href="./nature-of-competition.html"> Nature of Competition</a></li>
+                        <li><a href="./features-of-perfect-competition.html">Features of Perfect Competition </a></li>
+                        <li><a href="./monopoly.html">Monopoly</a></li>
+                        <li><a href="./oligopoly.html">Oligopoly</a></li>
+                        <li><a href="./monopolistic-competition.html">Monopolistic Competition</a></li>
+                        <li><a href="#"> </a></li>
+
+                    </ul>
+                    <h3><a href="./pricing.html">Pricing</a></h3>
+                    <ul>
+
+                        <li><a href="./types-of-pricing.html"> Types of Pricing</a></li>
+                        <li><a href="./product-life-cycle-based-pricing.html">Product Life Cycle Based Pricing </a></li>
+                        <li><a href="./break-even-analysis.html">Break Even Analysis </a></li>
+                        <li><a href="./cost-volumn-profit-analysis.html">Cost Volume Profit Analysis </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+
+                    </ul>
+
+
+                </ul>
+            </div>
+
+            <div class="main">
+                <div class="c1">Production Function With One Variable Input</div>
+
+                <p>The law of variable proportions which was earlier called as “Law of diminishing returns has played a
+                    vital role in the modern economics theory. Assume that a firm's production function consists of
+                    fixed quantities of all inputs (land, equipment, etc.) except labour which is a variable input. If
+                    you go on adding the variable input, say, labor, the total output in the initial stages will
+                    increase at an increasing rate, and after reaching a certain level of output the total output will
+                    increase at a declining rate. If variable factor inputs are added further to the fixed factor input,
+                    the total output may decline. This law is of universal nature and it proved to be true in
+                    agriculture.</p>
+
+                <strong>Assumptions of the Law:</strong>
+
+                <p>The law is based upon the following assumptions:</p>
+
+                <ol>
+                    <li>Only one factor is varied</li>
+                    <li>The scale of output is unchanged</li>
+                    <li>The technique of production is unchanged</li>
+                    <li>All units of factor input varied are homogeneous</li>
+                </ol>
+
+                <strong>Three stages of law:</strong>
+
+                <p>The behaviour of the Output when the varying quantity of one factor is combined with a fixed quantity
+                    of the other can be divided into three distinct stages. The three stages can be better understood by
+                    following the table.</p>
+                <figure class="image">
+                    <picture>
+
+                        <a href="https://i.ibb.co/TmzFZKs/one-variable-input1.png">
+                            <img src="https://i.ibb.co/TmzFZKs/one-variable-input1.png" alt="one-variable-input1"
+                                border="0" sizes="(max-width: 660px) 100vw, 660px"></a>
+                    </picture>
+                </figure>
+                <figure class="image">
+                    <picture>
+
+                        <a href="https://i.ibb.co/ZJjDgkH/one-variable-input2.png">
+                            <img src="https://i.ibb.co/ZJjDgkH/one-variable-input2.png" alt="one-variable-input2"
+                                border="0" sizes="(max-width: 660px) 100vw, 660px"></a>
+                    </picture>
+                </figure>
+
+
+                <p>From the above graph the law of variable proportions operates in three stages. In the first stage,
+                    total product increases at an increasing rate. The marginal product in this stage increases at an
+                    increasing rate resulting in a greater increase in total product. The average product also
+                    increases. This stage continues up to the point where average product is equal to marginal product.
+                    The law of increasing returns is in operation at this stage. The law of diminishing returns starts
+                    operating from the second stage onwards. At the second stage total product increases only at a
+                    diminishing rate. The average product also declines. The second stage comes to an end where total
+                    product becomes maximum and marginal product becomes zero. The marginal product becomes negative in
+                    the third stage. So the total product also declines. The average product continues to decline.</p>
+
+                <p>We can sum up the above relationship thus when „AP‟ is rising, “MP‟ rises more than “AP; When „AP” is
+                    maximum and constant, „MP‟ becomes equal to „AP‟ when „AP‟ starts falling, „MP‟ falls faster than
+                    „AP‟.</p>
+
+                <p>Thus, the total product, marginal product and average product pass through three phases, viz.,
+                    increasing diminishing and negative returns stage. The law of variable proportion is nothing but the
+                    combination of the law of increasing and demising returns.</p>
+
+
+
+
+
+
+
+
+
+
+            </div>
+            <div class="extra">
+                <!----<h1>Query Box</h1>
+
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="011bd98a-293e-4d49-a2a4-c693ecea3738">
+                    <label for="name">Your Name:</label>
+                    <input type="text" name="name" required>
+
+                    <label for="email">Your Email:</label>
+                    <input type="email" name="email" required>
+
+                    <label for="comment">Your Query:</label>
+                    <textarea name="Query" rows="4" required></textarea>
+
+                    <button type="submit">Submit Query</button>
+                </form>-->
+            </div>
+        </div>
+
+
+        <footer>
+            <div class="footer-content">
+                <div class="about" id="about">
+                    <f3><b>About:</b></f3>
+                    <p>Welcome to cmrTpoint, the official academic tutorial platform of students! We provide certified
+                        answers, reliable educational content, and continuously update our platform to enhance your
+                        learning
+                        experience. With the collaboration of students and faculty guidance, cmrTpoint is committed to
+                        academic excellence and innovation.</p>
+                </div>
+                <div class="contact" id="contact">
+                    <f3><b>Contact:</b></f3>
+                    <p>Email: udayin475@gmail.com</p>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2024 Your @udayusr. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

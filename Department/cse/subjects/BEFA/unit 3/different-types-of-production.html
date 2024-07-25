@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Different Types Of Production Functions - cmrTpoint</title>
+    <meta name="description"
+        content="Explore the different types of production functions, including Cobb-Douglas, Leontief, and CES production functions. Understand their assumptions, formulas, and examples.">
+    <meta name="keywords"
+        content="production functions, Cobb-Douglas, Leontief, CES, economics, output, input, capital, labor, elasticity of substitution">
+    <meta name="author" content="Your Name">
+
+    <link rel="icon" type="image/x-icon" href="../../../../../assets/media/icon.png">
+    <link rel="stylesheet" href="../../../../../assets/style.css">
+    <link rel="stylesheet" href="../../../../../assets/mstyle.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+
+
+
+
+<body>
+    <div>
+        <div class="menu-bar">
+            <ul>
+                <a href="../../../../../index.html" style="display: inline-block;">
+                    <img src="../../../../../assets/media/logo1.0.png" alt="Logo" class="logo"
+                        style="width: 50px; height:40px ;">
+                </a>
+
+
+                <li class=""><a href="../../../../cse.html">Home</a></li>
+                <li class=""><a href="../befa.html">BEFA</a></li>
+                <li class="hide-desktop show-mobile"> <a href="../unit 3/topic3.html">☰</a></li>
+
+                <li><a href="../unit 1/unit1.html">Unit-1</a></li>
+                <li><a href="../unit 2/unit2.html">Unit-2</a></li>
+                <li class="active"><a href="./unit3.html">Unit-3</a></li>
+                <li><a href="../unit 4/unit4.html">Unit-4</a></li>
+                <li><a href="../unit 5/unit5.html">Unit-5</a></li>
+            </ul>
+        </div>
+        <script>
+            // Function to check viewport size and toggle classes accordingly
+            function toggleClasses() {
+                var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+                var elements = document.querySelectorAll('.hide-desktop, .show-mobile');
+
+                if (viewportWidth >= 768) {
+                    elements.forEach(function (element) {
+                        element.classList.remove('hide-desktop');
+                        element.classList.add('show-mobile');
+                    });
+                } else {
+                    elements.forEach(function (element) {
+                        element.classList.remove('show-mobile');
+                        element.classList.add('hide-desktop');
+                    });
+                }
+            }
+
+            // Call toggleClasses function when the page loads and when it is resized
+            window.onload = toggleClasses;
+            window.onresize = toggleClasses;
+        </script>
+
+        <div class="inbox">
+            <div class="sidebar">
+                <h2><a href="./production-analysis.html" class="">Production Analysis</a></h2>
+                <ul>
+
+                    <li><a href="./factors-of-production.html">Factors of Production </a></li>
+                    <li><a href="./production-function.html"> Production Function</a></li>
+                    <li><a href="./production-function-with-one-variable.html"> Production Function with One
+                            Variable Input</a></li>
+                    <li><a href="./two-variable-inputs.html">Two variable Inputs </a></li>
+                    <li><a href="./returns-to-scale.html">Returns to scale </a></li>
+                    <li><a href="./different-types-of-production.html" class="active"> Different Types of Production
+                            Function</a></li>
+                    <li><a href="#"> </a></li>
+                    <li><a href="#"> </a></li>
+
+
+                    <h3><a href="./cost-analysis.html">Cost Analysis</a></h3>
+                    <ul>
+
+                        <li><a href="./types-of-cost.html">Types of Costs </a></li>
+                        <li><a href="./short-run-and-long-rub-cost-functions.html">Short Run and Long Run Cost Functions
+                            </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+
+                    </ul>
+                    <h3><a href="./market-structures.html">Market Structures</a></h3>
+                    <ul>
+                        <li><a href="./nature-of-competition.html"> Nature of Competition</a></li>
+                        <li><a href="./features-of-perfect-competition.html">Features of Perfect Competition </a></li>
+                        <li><a href="./monopoly.html">Monopoly</a></li>
+                        <li><a href="./oligopoly.html">Oligopoly</a></li>
+                        <li><a href="./monopolistic-competition.html">Monopolistic Competition</a></li>
+                        <li><a href="#"> </a></li>
+
+                    </ul>
+                    <h3><a href="./pricing.html">Pricing</a></h3>
+                    <ul>
+
+                        <li><a href="./types-of-pricing.html"> Types of Pricing</a></li>
+                        <li><a href="./product-life-cycle-based-pricing.html">Product Life Cycle Based Pricing </a></li>
+                        <li><a href="./break-even-analysis.html">Break Even Analysis </a></li>
+                        <li><a href="./cost-volumn-profit-analysis.html">Cost Volume Profit Analysis </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+
+                    </ul>
+
+
+                </ul>
+            </div>
+
+            <div class="main">
+
+                <div class="c1">Different Types Of Production Functions</div>
+
+                <p><strong>1. Cobb-Douglas Production Function</strong></p>
+
+                <p>This production function was proposed by C. W. Cobb and P. H. Dougles. This famous statistical
+                    production function is known as Cobb-Douglas production function. Originally the function is applied
+                    on the empirical study of the American manufacturing industry from 1899 to 1922. Cobb – Douglas
+                    production function takes the following mathematical form.</p>
+
+                <div class="equation">Q = aL<sup>b</sup>K<sup>c</sup></div>
+                <div class="equation">Q = 1.01L<sup>0.75</sup>K<sup>0.25</sup></div>
+                <figure class="image">
+                    <picture>
+
+                        <a href="https://i.ibb.co/c1szBGR/production-function1.png">
+                            <img src="https://i.ibb.co/c1szBGR/production-function1.png" alt="production-function1"
+                                border="0" sizes="(max-width: 660px) 100vw, 660px"></a>
+                    </picture>
+                </figure>
+
+                <p>The above production function shows that 1% change in labor input, capital remaining the same, is
+                    associated with a 0.75 percent change in output. Similarly, 1% change in capital, labor remaining
+                    the same, is associated with a 0.25 percent change in output.</p>
+
+                <strong>Assumptions:</strong>
+                <ol>
+                    <li>The function assumes that output is the function of two factors viz. capital and labour.</li>
+                    <li>It is a linear homogenous production function of the first degree</li>
+                    <li>There are constant returns to scale (b+c=1)</li>
+                    <li>All inputs are homogenous</li>
+                    <li>There is perfect competition</li>
+                    <li>There is no change in technology</li>
+                    <li>Both L&K should be positive for Q to exist. If either of these is zero, Q will be zero. This
+                        implies that both labor and capital will be combined to get output.</li>
+                </ol>
+                <figure class="image">
+                    <picture>
+
+                        <a href="https://i.ibb.co/SKgj6q8/production-function2.png">
+                            <img src="https://i.ibb.co/SKgj6q8/production-function2.png" alt="production-function2"
+                                border="0" sizes="(max-width: 660px) 100vw, 660px"></a>
+                    </picture>
+                </figure>
+
+
+                <p><strong>2. Leontief Production Function</strong></p>
+
+                <p>Leontief production function, also known as Fixed Proportion Production Function, uses fixed
+                    proportion of inputs having no substitutability between them. It is regarded as the limiting case
+                    for constant elasticity of substitution.</p>
+
+                <p>The production function can be expressed as follows:</p>
+
+                <div class="equation">Q = min (z1/a, Z2/b)</div>
+                <figure class="image">
+                    <picture>
+
+                        <a href="https://i.ibb.co/BydzGCd/production-function3.png">
+                            <img src="https://i.ibb.co/BydzGCd/production-function3.png" alt="production-function3"
+                                border="0" sizes="(max-width: 660px) 100vw, 660px"></a>
+                    </picture>
+                </figure>
+
+                <p>Where, q = quantity of output produced, Z1 = utilized quantity of input 1, Z2 = utilized quantity of
+                    input 2, a and b = constants</p>
+
+                <p>For example, tyres and steering wheels are used for producing cars. In such a case, the production
+                    function can be as follows:</p>
+
+                <div class="equation">Q = min (number of tyres used, number of steering wheels used)</div>
+
+                <p>Suppose that the inputs "tires" and "steering wheels" are used in the production of a car (for
+                    simplicity of the example, to the exclusion of anything else). Then in the above formula q refers to
+                    the number of cars produced i.e., one in our example, z1 refers to the number of tires used, and z2
+                    refers to the number of steering wheels used. Assuming that each car is produced with 4 tires and 1
+                    steering wheel, the Leontief production function is</p>
+
+                <div class="equation">Number of cars = Min{¼ times the number of tires, 1 times the number of steering
+                    wheels}</div>
+                <figure class="image">
+                    <picture>
+
+                        <a href="https://i.ibb.co/LZ1h2Vv/production-function4.png">
+                            <img src="https://i.ibb.co/LZ1h2Vv/production-function4.png" alt="production-function4"
+                                border="0" sizes="(max-width: 660px) 100vw, 660px"></a>
+                    </picture>
+                </figure>
+
+
+                <p>In the above given figure, OR shows the fixed Tyres-Wheels ratio, if a firm wants to produce 1 car,
+                    then 4 tyres and 1 wheel must be used. Similarly, for the production of 3 cars and 4 cars, 12 tyres
+                    and 3 wheel and 16 tyres and 4 wheel must be employed respectively.</p>
+
+                <p><strong>3. CES Production Function</strong></p>
+
+                <p>Definition: The Constant Elasticity of Substitution Production Function or CES implies, that any
+                    change in the input factors, results in the constant change in the output. In CES, the elasticity of
+                    substitution is constant and may not necessarily be equal to one or unity.</p>
+
+                <p>In constant elasticity of substitution production function, all the input factors are taken into the
+                    consideration such as raw material, technology, labor, capital, etc. The marginal product of one
+                    factor increases with the increase in the value of the other factors of production. Also, the
+                    marginal product of labor and capital will be positive in case of constant returns to scale.</p>
+
+                <p>The constant elasticity of substitution production function can be expressed algebraically as:</p>
+
+                <div class="equation">Q = A[aK<sup>-ρ</sup> + (1 - a)L<sup>-ρ</sup>]<sup>-1/ρ</sup></div>
+                <p>Where, Q = output, K = Capital and L = Labor</p>
+                <p>A = efficiency parameter that shows the organizational aspects of production and the state of
+                    technology.</p>
+
+                <p>The Constant elasticity of substitution production function shows, that any change in the technology
+                    or organizational aspects, the production function changes with a shift in the efficiency parameter.
+                </p>
+
+                <p>α = distribution parameter or capital intensity factor coefficient concerned with relative factors in
+                    the total output.</p>
+                <p>β = substitution parameter, that determines the elasticity of substitution</p>
+
+                <p>The homogeneity of the production function can be determined by the value of the substitution
+                    parameter (β), if it is equal to one, then it is said to be linearly homogeneous i.e. the
+                    proportionate change in the input factors results in the increase in the output in the same
+                    proportion.</p>
+
+                <p>For example:</p>
+
+                <p>Consider the following production function.</p>
+                <div class="equation">Q = 5K + 10L</div>
+
+                <p>It means 1 unit K produces 5 units and 2 units of L produce 10 units.</p>
+
+                <p>If we assume that, initially K = 1, L = 2, the total output may be obtained by substituting 1 for K
+                    and 2 for L in the below equation. Thus,</p>
+
+                <div class="equation">Qx1 = 5(1) + 10(2)</div>
+                <div class="equation">25 = 5 + 20</div>
+
+                <p>When inputs are doubled (i.e., K = 2 and L = 4). Then,</p>
+
+                <div class="equation">Qx2 = 5(1x2) + 10(2x2)</div>
+                <div class="equation">50 = 10 + 40</div>
+
+                <p>Thus, the given production functions, when inputs are doubled, the output is also doubled.</p>
+
+
+            </div>
+            <div class="extra">
+                <!----<h1>Query Box</h1>
+
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="011bd98a-293e-4d49-a2a4-c693ecea3738">
+                    <label for="name">Your Name:</label>
+                    <input type="text" name="name" required>
+
+                    <label for="email">Your Email:</label>
+                    <input type="email" name="email" required>
+
+                    <label for="comment">Your Query:</label>
+                    <textarea name="Query" rows="4" required></textarea>
+
+                    <button type="submit">Submit Query</button>
+                </form>-->
+            </div>
+        </div>
+
+
+        <footer>
+            <div class="footer-content">
+                <div class="about" id="about">
+                    <f3><b>About:</b></f3>
+                    <p>Welcome to cmrTpoint, the official academic tutorial platform of students! We provide certified
+                        answers, reliable educational content, and continuously update our platform to enhance your
+                        learning
+                        experience. With the collaboration of students and faculty guidance, cmrTpoint is committed to
+                        academic excellence and innovation.</p>
+                </div>
+                <div class="contact" id="contact">
+                    <f3><b>Contact:</b></f3>
+                    <p>Email: udayin475@gmail.com</p>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2024 Your @udayusr. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

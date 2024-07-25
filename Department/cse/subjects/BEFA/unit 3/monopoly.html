@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monopoly - cmrTpoint</title>
+    <meta name="description"
+        content="Understand the features and price-output determination under monopoly, a market structure where a single firm controls the entire supply of a commodity with no close substitutes.">
+    <meta name="keywords"
+        content="monopoly, market structure, price determination, supply and demand, economics, business strategy">
+    <meta name="author" content="Your Name">
+    <link rel="icon" type="image/x-icon" href="../../../../../assets/media/icon.png">
+    <link rel="stylesheet" href="../../../../../assets/style.css">
+    <link rel="stylesheet" href="../../../../../assets/mstyle.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+
+
+
+
+<body>
+    <div>
+        <div class="menu-bar">
+            <ul>
+                <a href="../../../../../index.html" style="display: inline-block;">
+                    <img src="../../../../../assets/media/logo1.0.png" alt="Logo" class="logo"
+                        style="width: 50px; height:40px ;">
+                </a>
+
+
+                <li class=""><a href="../../../../cse.html">Home</a></li>
+                <li class=""><a href="../befa.html">BEFA</a></li>
+                <li class="hide-desktop show-mobile"> <a href="../unit 3/topic3.html">☰</a></li>
+
+                <li><a href="../unit 1/unit1.html">Unit-1</a></li>
+                <li><a href="../unit 2/unit2.html">Unit-2</a></li>
+                <li class="active"><a href="./unit3.html">Unit-3</a></li>
+                <li><a href="../unit 4/unit4.html">Unit-4</a></li>
+                <li><a href="../unit 5/unit5.html">Unit-5</a></li>
+            </ul>
+        </div>
+        <script>
+            // Function to check viewport size and toggle classes accordingly
+            function toggleClasses() {
+                var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+                var elements = document.querySelectorAll('.hide-desktop, .show-mobile');
+
+                if (viewportWidth >= 768) {
+                    elements.forEach(function (element) {
+                        element.classList.remove('hide-desktop');
+                        element.classList.add('show-mobile');
+                    });
+                } else {
+                    elements.forEach(function (element) {
+                        element.classList.remove('show-mobile');
+                        element.classList.add('hide-desktop');
+                    });
+                }
+            }
+
+            // Call toggleClasses function when the page loads and when it is resized
+            window.onload = toggleClasses;
+            window.onresize = toggleClasses;
+        </script>
+
+        <div class="inbox">
+            <div class="sidebar">
+                <h2><a href="./production-analysis.html" class="">Production Analysis</a></h2>
+                <ul>
+
+                    <li><a href="./factors-of-production.html">Factors of Production </a></li>
+                    <li><a href="./production-function.html"> Production Function</a></li>
+                    <li><a href="./production-function-with-one-variable.html"> Production Function with One
+                            Variable Input</a></li>
+                    <li><a href="./two-variable-inputs.html">Two variable Inputs </a></li>
+                    <li><a href="./returns-to-scale.html">Returns to scale </a></li>
+                    <li><a href="./different-types-of-production.html"> Different Types of Production
+                            Function</a></li>
+                    <li><a href="#"> </a></li>
+                    <li><a href="#"> </a></li>
+
+
+                    <h3><a href="./cost-analysis.html">Cost Analysis</a></h3>
+                    <ul>
+
+                        <li><a href="./types-of-cost.html">Types of Costs </a></li>
+                        <li><a href="./short-run-and-long-rub-cost-functions.html">Short Run and Long Run Cost Functions
+                            </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+
+                    </ul>
+                    <h3><a href="./market-structures.html">Market Structures</a></h3>
+                    <ul>
+                        <li><a href="./nature-of-competition.html"> Nature of Competition</a></li>
+                        <li><a href="./features-of-perfect-competition.html">Features of Perfect Competition </a></li>
+                        <li><a href="./monopoly.html" class="active">Monopoly</a></li>
+                        <li><a href="./oligopoly.html">Oligopoly</a></li>
+                        <li><a href="./monopolistic-competition.html">Monopolistic Competition</a></li>
+                        <li><a href="#"> </a></li>
+
+                    </ul>
+                    <h3><a href="./pricing.html">Pricing</a></h3>
+                    <ul>
+
+                        <li><a href="./types-of-pricing.html"> Types of Pricing</a></li>
+                        <li><a href="./product-life-cycle-based-pricing.html">Product Life Cycle Based Pricing </a></li>
+                        <li><a href="./break-even-analysis.html">Break Even Analysis </a></li>
+                        <li><a href="./cost-volumn-profit-analysis.html">Cost Volume Profit Analysis </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+
+                    </ul>
+
+
+                </ul>
+            </div>
+
+            <div class="main">
+                <div class="c1">Monopoly</div>
+
+                <p><strong>‘Mono’</strong> means single and <strong>‘poly’</strong> means seller. The term monopoly
+                    refers to a market in which a single firm controls the whole supply of a particular product which
+                    has no close substitutes. Monopoly emerges in firms such as transport, water, and electricity
+                    supply, etc.</p>
+
+                <div class="c1">Features:</div>
+
+                <p><strong>1. Single person or a firm:</strong> A single person or a firm controls the total supply of
+                    the commodity. There will be no competition for the monopoly firm. The monopolist firm is the only
+                    firm in the whole industry.</p>
+
+                <p><strong>2. No close substitute:</strong> The goods sold by the monopolist shall not have close
+                    substitutes. Even if the price of the monopoly product increases, people will not go for
+                    substitutes. For example, if the price of an electric bulb increases slightly, consumers will not
+                    switch to kerosene lamps.</p>
+
+                <p><strong>3. Large number of Buyers:</strong> Under monopoly, there may be a large number of buyers in
+                    the market who compete among themselves.</p>
+
+                <p><strong>4. Price Maker:</strong> Since the monopolist controls the whole supply of a commodity, they
+                    are a price-maker, and they can alter the price.</p>
+
+                <p><strong>5. Supply and Price:</strong> The monopolist can fix either the supply or the price. They
+                    cannot fix both. If they charge a very high price, they can sell a small amount. If they want to
+                    sell more, they have to charge a low price. They cannot sell as much as they wish for any price they
+                    please.</p>
+
+                <p><strong>6. Downward Sloping Demand Curve:</strong> The demand curve (average revenue curve) of a
+                    monopolist slopes downward from left to right. It means that they can sell more only by lowering the
+                    price.</p>
+
+                <p>Monopoly refers to a market situation where there is only one seller. They have complete control over
+                    the supply of a commodity and are therefore in a position to fix any price. Under monopoly, there is
+                    no distinction between a firm and an industry because the entire industry consists of a single firm.
+                </p>
+
+                <p>Being the sole producer, the monopolist has complete control over the supply of the commodity. They
+                    also have the power to influence the market price. They can raise the price by reducing their output
+                    and lower the price by increasing their output. Thus, they are a price-maker. They can fix the price
+                    to their maximum advantage. However, they cannot fix both the supply and the price simultaneously.
+                    They can do one thing at a time. If they fix the price, their output will be determined by the
+                    market demand for their commodity. On the other hand, if they fix the output to be sold, the market
+                    will determine the price for the commodity. Thus, their decision to fix either the price or the
+                    output is determined by the market demand.</p>
+
+                <p>The market demand curve of the monopolist (the average revenue curve) is downward sloping. Its
+                    corresponding marginal revenue curve is also downward sloping but lies below the average revenue
+                    curve. The monopolist faces a down-sloping demand curve because to sell more output, they must
+                    reduce the price of their product. The firm’s demand curve and the industry’s demand curve are one
+                    and the same. The average cost and marginal cost curves are U-shaped curves. Marginal cost falls and
+                    rises steeply compared to average cost. Under monopoly, the demand curve is the average revenue
+                    curve.</p>
+                <figure class="image">
+                    <picture>
+
+                        <a href="https://i.ibb.co/ZMggBng/monopoly1.png">
+                            <img src="https://i.ibb.co/ZMggBng/monopoly1.png" alt="monopoly1" border="0"
+                                sizes="(max-width: 660px) 100vw, 660px"></a>
+                    </picture>
+                </figure>
+
+                <div class="c1">Price-Output Determination Under Monopoly</div>
+
+                <p>The monopolistic firm attains equilibrium when its marginal cost becomes equal to the marginal
+                    revenue. The monopolist always desires to make maximum profits. They make maximum profits when
+                    <strong>MC=MR</strong>. They do not increase their output if their revenue exceeds their costs. But
+                    when the costs exceed the revenue, the monopolist firm incurs losses. Hence, the monopolist curtails
+                    their production. They produce up to that point where marginal cost is equal to the marginal revenue
+                    (<strong>MR=MC</strong>). Thus, this point is called the equilibrium point. The price-output
+                    determination under monopoly may be explained with the help of a diagram.
+                </p>
+                <figure class="image">
+                    <picture>
+
+                        <a href="https://i.ibb.co/GvsgW9X/monopoly2.png">
+                            <img src="https://i.ibb.co/GvsgW9X/monopoly2.png" alt="monopoly2" border="0"
+                                sizes="(max-width: 660px) 100vw, 660px"></a>
+                    </picture>
+                </figure>
+
+                <p>In the diagram, the quantity supplied or demanded is shown along the X-axis. The cost or revenue is
+                    shown along the Y-axis. AC and MC are the average cost and marginal cost curves, respectively. AR
+                    and MR curves slope downwards from left to right. AC and MC are U-shaped curves. The monopolistic
+                    firm attains equilibrium when its marginal cost is equal to marginal revenue
+                    (<strong>MC=MR</strong>). Under monopoly, the MC curve may cut the MR curve from below or from the
+                    side. In the diagram, the above condition is satisfied at point E. At point E,
+                    <strong>MC=MR</strong>. The firm is in equilibrium. The equilibrium output is OM. Up to OM output,
+                    MR is greater than MC and beyond OM, MR is less than MC. Therefore, the monopolist will be in
+                    equilibrium at output OM where <strong>MR=MC</strong> and profits are maximized.
+                </p>
+
+                <p>The above diagram:</p>
+                <p><strong>Average revenue = MQ or OP</strong></p>
+                <p><strong>Average cost = MR</strong></p>
+                <p><strong>Profit per unit = Average Revenue - Average Cost = MQ - MR = QR</strong></p>
+                <p><strong>Total Profit = QR x SR = PQRS</strong></p>
+                <p>If <strong>AR > AC</strong>; Abnormal or super normal profits.</p>
+                <p>If <strong>AR = AC</strong>; Normal Profit</p>
+                <p>If <strong>AR < AC</strong>; Loss</p>
+
+
+
+
+
+
+
+            </div>
+            <div class="extra">
+                <!----<h1>Query Box</h1>
+
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="011bd98a-293e-4d49-a2a4-c693ecea3738">
+                    <label for="name">Your Name:</label>
+                    <input type="text" name="name" required>
+
+                    <label for="email">Your Email:</label>
+                    <input type="email" name="email" required>
+
+                    <label for="comment">Your Query:</label>
+                    <textarea name="Query" rows="4" required></textarea>
+
+                    <button type="submit">Submit Query</button>
+                </form>-->
+            </div>
+        </div>
+
+
+        <footer>
+            <div class="footer-content">
+                <div class="about" id="about">
+                    <f3><b>About:</b></f3>
+                    <p>Welcome to cmrTpoint, the official academic tutorial platform of students! We provide certified
+                        answers, reliable educational content, and continuously update our platform to enhance your
+                        learning
+                        experience. With the collaboration of students and faculty guidance, cmrTpoint is committed to
+                        academic excellence and innovation.</p>
+                </div>
+                <div class="contact" id="contact">
+                    <f3><b>Contact:</b></f3>
+                    <p>Email: udayin475@gmail.com</p>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2024 Your @udayusr. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

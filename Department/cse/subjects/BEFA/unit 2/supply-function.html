@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supply Function - cmrTput</title>
+    <meta name="description"
+        content="Understand the supply function in economics, which expresses the relationship between supply and various factors affecting it. Learn about the Law of Supply, which states that price and quantity supplied are directly related. Explore assumptions and the behavior of suppliers with changes in prices.">
+    <meta name="keywords"
+        content="supply function, law of supply, economics, supply and price, factors affecting supply, supply curve">
+    <meta name="author" content="Your Name">
+    <link rel="icon" type="image/x-icon" href="../../../../../assets/media/icon.png">
+    <link rel="stylesheet" href="../../../../../assets/style.css">
+    <link rel="stylesheet" href="../../../../../assets/mstyle.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+
+
+<body>
+    <div>
+        <div class="menu-bar">
+            <ul>
+                <a href="../../../../../index.html" style="display: inline-block;">
+                    <img src="../../../../../assets/media/logo1.0.png" alt="Logo" class="logo"
+                        style="width: 50px; height:40px ;">
+                </a>
+
+
+                <li class=""><a href="../../../../cse.html">Home</a></li>
+                <li class=""><a href="../befa.html">BEFA</a></li>
+                <li class="hide-desktop show-mobile"> <a href="../unit 2/topic2.html">☰</a></li>
+
+                <li><a href="../unit 1/unit1.html">Unit-1</a></li>
+                <li class="active"><a href="./unit2.html">Unit-2</a></li>
+                <li><a href="../unit 3/unit3.html">Unit-3</a></li>
+                <li><a href="../unit 4/unit4.html">Unit-4</a></li>
+                <li><a href="../unit 5/unit5.html">Unit-5</a></li>
+            </ul>
+        </div>
+        <script>
+            // Function to check viewport size and toggle classes accordingly
+            function toggleClasses() {
+                var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+                var elements = document.querySelectorAll('.hide-desktop, .show-mobile');
+
+                if (viewportWidth >= 768) {
+                    elements.forEach(function (element) {
+                        element.classList.remove('hide-desktop');
+                        element.classList.add('show-mobile');
+                    });
+                } else {
+                    elements.forEach(function (element) {
+                        element.classList.remove('show-mobile');
+                        element.classList.add('hide-desktop');
+                    });
+                }
+            }
+
+            // Call toggleClasses function when the page loads and when it is resized
+            window.onload = toggleClasses;
+            window.onresize = toggleClasses;
+        </script>
+
+        <div class="inbox">
+            <div class="sidebar">
+                <h2><a href="./demand-analysis.html" class="">Demand Analysis</a></h2>
+                <ul>
+                    <li><a href="./elasticity.html" class="">Elasticity</a></li>
+                    <li><a href="./types-of-elasticity.html">Types fo Elasticity </a></li>
+                    <li><a href="./law-of-demand.html">Law of Demand </a></li>
+                    <li><a href="./measurement-and-significance-of-elasticity-of-demand.html">Measurement and
+                            Significance of Elasticity of Demand </a></li>
+                    <li><a href="./factors-affecting-elasticity-of-demand.html">Factors Affecting Elasticity of
+                            Demand </a></li>
+                    <li><a href="./elasticity-of-demand-in-decision-making.html">Elasticity of Demand in
+                            Decision Making </a></li>
+                    <li><a href="./demand-forcasting.html">Demand Forecasting </a></li>
+                    <li><a href="./steps-in-demand-forecasting.html">Steps in Demand Forecasting </a></li>
+                    <li><a href="./methods-of-demand-forcasting.html">Methods of Demand Forecasting</a></li>
+                    <li><a href="#"> </a></li>
+                    <li><a href="#"> </a></li>
+                    <li><a href="#"> </a></li>
+                    <li><a href="#"> </a></li>
+
+                    <h3><a href="./supply-analysis.html">Supply Analysis</a></h3>
+                    <ul>
+                        <li><a href="./determinants-of-supply.html">Determinants of Supply </a></li>
+                        <li><a href="./supply-function.html" class="active">Supply Function & Law of Supply </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+                        <li><a href="#"> </a></li>
+
+                    </ul>
+
+                </ul>
+            </div>
+
+            <div class="main">
+                <div class="c1">Supply Function</div>
+                <figure class="image">
+                    <picture>
+
+                        <a href="https://i.ibb.co/p08QJ09/functionoflaw.jpg"> <img
+                                src="https://i.ibb.co/p08QJ09/functionoflaw.jpg" alt="functionoflaw"
+                                sizes="(max-width: 660px) 100vw, 660px"></a>
+                    </picture>
+                </figure>
+
+
+                <p>The supply function is the mathematical expression of the relationship between supply and those
+                    factors that affect the willingness and ability of a supplier to offer goods for sale.</p>
+
+                <p>S<sub>X</sub> = Supply of goods X</p>
+                <p>P<sub>X</sub> = Price of goods X</p>
+                <p>P<sub>F</sub> = Factor input employed (used) for production.</p>
+                <ul>
+                    <li>Raw material</li>
+                    <li>Human resources</li>
+                    <li>Machinery</li>
+                </ul>
+                <p>O = Factors outside economic sphere.</p>
+                <p>T = Technology. t = Taxes.</p>
+                <p>S = Subsidies</p>
+
+                <p>There is a functional (direct) relationship between price and supply.</p>
+
+                <div class="c1">Law Of Supply</div>
+
+                <p><strong>Definition:</strong> Law of supply states that other factors remaining constant, price and
+                    quantity supplied of a good are directly related to each other. In other words, when the price paid
+                    by buyers for a good rises, then suppliers increase the supply of that good in the market.</p>
+
+                <p>In the Words of Dooley, ―The law of supply states that other things remaining the same, higher the
+                    prices the greater the quantity supplied and lower the prices the smaller the quantity supplied‖.
+                </p>
+
+                <p><strong>Assumption of the Law :</strong></p>
+                <ol>
+                    <li>It is assumed that incomes of buyers and sellers remain constant.</li>
+                    <li>It is assumed that the tastes and preferences of buyers and sellers remain constant.</li>
+                    <li>Cost of all the factors of production is also assumed to be constant.</li>
+                    <li>It is also assumed that the level of technology remains constant.</li>
+                    <li>It is also assumed that the commodity is divisible.</li>
+                    <li>Law of supply states only a static situation.</li>
+                </ol>
+
+                <p><strong>Description:</strong> Law of supply depicts the producer behavior at the time of changes in
+                    the prices of goods and services. When the price of a good rises, the supplier increases the supply
+                    in order to earn a profit because of higher prices.
+                <figure class="image">
+                    <picture>
+
+                        <a href="https://i.ibb.co/Q69sJFn/lawofsupply.png"> <img
+                                src="https://i.ibb.co/Q69sJFn/lawofsupply.png" alt="lawofsupply"
+                                sizes="(max-width: 660px) 100vw, 660px"></a>
+                    </picture>
+                </figure>
+                </p>
+
+                <p>The above diagram shows the supply curve that is upward sloping (positive relation between the price
+                    and the quantity supplied). When the price of the good was at P4, suppliers were supplying Q3
+                    quantity. As the price starts rising, the quantity supplied also starts rising.</p>
+
+            </div>
+            <div class="extra">
+                <!----<h1>Query Box</h1>
+
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="011bd98a-293e-4d49-a2a4-c693ecea3738">
+                    <label for="name">Your Name:</label>
+                    <input type="text" name="name" required>
+
+                    <label for="email">Your Email:</label>
+                    <input type="email" name="email" required>
+
+                    <label for="comment">Your Query:</label>
+                    <textarea name="Query" rows="4" required></textarea>
+
+                    <button type="submit">Submit Query</button>
+                </form>-->
+            </div>
+        </div>
+
+
+        <footer>
+            <div class="footer-content">
+                <div class="about" id="about">
+                    <f3><b>About:</b></f3>
+                    <p>Welcome to cmrTpoint, the official academic tutorial platform of students! We provide certified
+                        answers, reliable educational content, and continuously update our platform to enhance your
+                        learning
+                        experience. With the collaboration of students and faculty guidance, cmrTpoint is committed to
+                        academic excellence and innovation.</p>
+                </div>
+                <div class="contact" id="contact">
+                    <f3><b>Contact:</b></f3>
+                    <p>Email: udayin475@gmail.com</p>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2024 Your @udayusr. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funds Flow Analysis - cmrTpoint</title>
+    <meta name="description"
+        content="Learn about Funds Flow Analysis including the preparation of funds flow statements, changes in working capital, and funds from operations.">
+    <meta name="keywords"
+        content="Funds Flow Analysis, Working Capital, Financial Statements, Funds from Operations, Financial Analysis">
+    <meta name="description"
+        content="Explore the concept of Cash Flow Analysis, its objectives, and the components of cash flow statements including operating, investing, and financing activities.">
+    <meta name="keywords"
+        content="cash flow analysis, cash flow statement, operating activities, investing activities, financing activities, cash inflows, cash outflows">
+    <meta name="author" content="Your Name">
+    <meta name="author" content="Your Name">
+
+    <link rel="icon" type="image/x-icon" href="../../../../../assets/media/icon.png">
+    <link rel="stylesheet" href="../../../../../assets/style.css">
+    <link rel="stylesheet" href="../../../../../assets/mstyle.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+
+
+<body>
+    <div>
+        <div class="menu-bar">
+            <ul>
+                <a href="../../../../../index.html" style="display: inline-block;">
+                    <img src="../../../../../assets/media/logo1.0.png" alt="Logo" class="logo"
+                        style="width: 50px; height:40px ;">
+                </a>
+
+
+                <li class=""><a href="../../../../cse.html">Home</a></li>
+                <li class=""><a href="../befa.html">BEFA</a></li>
+                <li class="hide-desktop show-mobile"> <a href="../unit 5/topic5.html">☰</a></li>
+
+                <li><a href="../unit 1/unit1.html">Unit-1</a></li>
+                <li><a href="../unit 2/unit2.html">Unit-2</a></li>
+                <li><a href="../unit 3/unit3.html">Unit-3</a></li>
+                <li><a href="../unit 4/unit4.html">Unit-4</a></li>
+                <li class="active"><a href="./unit5.html">Unit-5</a></li>
+            </ul>
+        </div>
+        <script>
+            // Function to check viewport size and toggle classes accordingly
+            function toggleClasses() {
+                var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+                var elements = document.querySelectorAll('.hide-desktop, .show-mobile');
+
+                if (viewportWidth >= 768) {
+                    elements.forEach(function (element) {
+                        element.classList.remove('hide-desktop');
+                        element.classList.add('show-mobile');
+                    });
+                } else {
+                    elements.forEach(function (element) {
+                        element.classList.remove('show-mobile');
+                        element.classList.add('hide-desktop');
+                    });
+                }
+            }
+
+            // Call toggleClasses function when the page loads and when it is resized
+            window.onload = toggleClasses;
+            window.onresize = toggleClasses;
+        </script>
+
+        <div class="inbox">
+            <div class="sidebar">
+                <h2><a href="./financial-analysis-through-ratios.html" class="">Financial Analysis Through
+                        Ratios</a></h2>
+                <ul>
+                    <li><a href="./concept-of-ratio-analysis.html">Concept of Ratio Analysis </a> </li>
+                    <li><a href="./liquidity-ratios.html"> Liquidity
+                            Ratios</a> </li>
+                    <li><a href="./turnover-ratios.html"> Turnover Ratios</a> </li>
+                    <li><a href="./profitability-ratios.html"> Profitability Ratios</a> </li>
+                    <li><a href="./proprietary-ratios.html"> Proprietary Ratios</a> </li>
+                    <li><a href="./solvency.html">Solvency </a> </li>
+                    <li><a href="./leverage-ratios.html"> Levarage Ratios</a> </li>
+                    <li><a href="./introduction-to-fund-flow-and-cash-flow-analysis.html" class="active"> Introduction
+                            to Fund Flow and
+                            Cash Flow Analysis</a> </li>
+                    <li><a href=""></a> </li>
+                    <li><a href=""> </a> </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </ul>
+            </div>
+
+            <div class="main">
+                <div class="c1">Funds Flow Analysis</div>
+
+                <div class="c1">Introduction</div>
+                <p>Balance sheets and profit and loss accounts show the financial status and profitability of a firm
+                    respectively. A balance sheet discloses the value of fixed assets and current assets, and the
+                    increase or decrease of all assets and liabilities can be ascertained by comparing it with the
+                    previous balance sheet. However, it does not disclose the reasons for these changes. To know these
+                    reasons, a "Funds Flow Statement" is prepared. In this context, 'fund' means "net working capital".
+                </p>
+
+                <div class="c1">What is ‘FUND’ and ‘FLOW’?</div>
+                <p>A layman can describe the word FUND as cash or cash equivalents. In technical terms, the word FUND
+                    means ‘Net Working Capital’. Funds may mean:</p>
+                <p><strong>- Cash only</strong></p>
+                <p><strong>- Net working capital, i.e., current assets less current liabilities</strong></p>
+                <p><strong>- Total resources or total funds</strong></p>
+                <p><strong>- Internal resources only</strong></p>
+                <p><strong>- Net worth, i.e., owner’s equity capital plus reserves</strong></p>
+
+                <p>The term FLOW refers to change or transfer. The term ‘Fund flow’ or ‘Flow of funds’ may thus mean
+                    transport of:</p>
+                <p><strong>- One asset to another</strong></p>
+                <p><strong>- One liability to another</strong></p>
+                <p><strong>- Assets to liabilities or vice versa</strong></p>
+                <p><strong>- The changes in working capital are also an inflow or outflow of funds, and thus it is
+                        called
+                        fund flow.</strong></p>
+
+                <p>“Fund” is considered as working capital while preparing “Funds flow statement”. Fund flow means
+                    change in the working capital. In other words, any increase or decrease in working capital means
+                    “flow of funds”. Any transaction which has one current account and the other non-current account
+                    results in change in the working capital.</p>
+                <figure class="image">
+                    <picture>
+
+                        <a href="https://i.ibb.co/3rvhzVL/fund-flow1.png">
+                            <img src="https://i.ibb.co/3rvhzVL/fund-flow1.png" alt="fund-flow1" border="0"
+                                sizes="(max-width: 660px) 100vw, 660px"></a>
+                    </picture>
+                </figure>
+
+
+
+                <div class="c1">Current and Non-current Accounts</div>
+                <p>Current accounts: Current assets accounts and current liabilities accounts are called current
+                    accounts. Assets which are converted into cash within a year are called current assets. Liabilities
+                    which are to be paid within a year are called current liabilities.</p>
+                <p>Non-current account: Accounts which are not current accounts are called non-current accounts. For
+                    example, fixed assets accounts, long-term liabilities accounts, and capital & reserves accounts.</p>
+
+                <div class="c1">Preparation of Funds Flow Statements</div>
+                <p>Funds flow statement is prepared by observing the items taken place during the periods of two balance
+                    sheets along with the adjustments into consideration.</p>
+
+                <p>Three statements are to be prepared:</p>
+                <ol>
+                    <li>Statement of Changes in Working Capital</li>
+                    <li>Statement of Funds from Operations</li>
+                    <li>Funds Flow Statement</li>
+                </ol>
+
+                <div class="c1">I. Statement of Changes in Working Capital</div>
+                <p>This statement reveals the net change in the working capital (CA – CL). Current assets and current
+                    liabilities are as follows:</p>
+                <figure class="image">
+                    <picture>
+
+                        <a href="https://i.ibb.co/5vNNvp5/fund-flow2.png">
+                            <img src="https://i.ibb.co/5vNNvp5/fund-flow2.png" alt="fund-flow2" border="0"
+                                sizes="(max-width: 660px) 100vw, 660px"></a>
+                    </picture>
+                </figure>
+                <figure class="image">
+                    <picture>
+
+                        <a href="https://i.ibb.co/2kMm4Ch/fund-flow3.png">
+                            <img src="https://i.ibb.co/2kMm4Ch/fund-flow3.png" alt="fund-flow3" border="0"
+                                sizes="(max-width: 660px) 100vw, 660px"></a>
+                    </picture>
+                </figure>
+
+
+
+
+                <div class="c1">Procedure for Preparation</div>
+
+                <p>
+                    1. The figures of current assets and current liabilities of two balance sheets given are recorded in
+                    the respective columns provided. Don’t take the adjustments. Then find working capital and
+                    increase/decrease in working capital.
+                </p>
+                <p>
+                    2. By observing the current assets and current liabilities, the differences are shown in the working
+                    capital columns against each account and balance those columns. Increase or decrease in working
+                    capital can be recognized as follows:
+                </p>
+                <figure class="image">
+                    <picture>
+
+                        <a href="https://i.ibb.co/VJpNBsr/fund-flow4.png">
+                            <img src="https://i.ibb.co/VJpNBsr/fund-flow4.png" alt="fund-flow4" border="0"
+                                sizes="(max-width: 660px) 100vw, 660px"></a>
+                    </picture>
+                </figure>
+
+
+                <div class="c1">II. Statement of Funds from Operations</div>
+                <figure class="image">
+                    <picture>
+
+                        <a href="https://i.ibb.co/ZYr3Xbc/fund-flow5.png">
+                            <img src="https://i.ibb.co/ZYr3Xbc/fund-flow5.png" alt="fund-flow5" border="0"
+                                sizes="(max-width: 660px) 100vw, 660px"></a>
+                    </picture>
+                </figure>
+
+
+                <div class="c1">Procedure for Preparation</div>
+                <p>
+                    1. Prepare the accounts for the items given in the adjustments to know the hidden information.
+                    Generally, the hidden information is as follows:
+                </p>
+                <p><strong>&#9733; Purchase price of a fixed asset</strong></p>
+                <p><strong>&#9733; Sale value of a fixed asset</strong></p>
+                <p><strong>&#9733; Profit/loss on sale of a fixed asset</strong></p>
+                <p><strong>&#9733; Depreciation provided</strong></p>
+                <p><strong>&#9733; Depreciation of the asset sold</strong></p>
+                <p><strong>&#9733; Provision for tax for the year</strong></p>
+                <p><strong>&#9733; Tax paid during the year</strong></p>
+                <p><strong>&#9733; Dividend proposed during the year</strong></p>
+                <p><strong>&#9733; Dividend paid during the year</strong></p>
+
+                <p>
+                    2. By observing balance sheets and accounts for adjustments, non-operating expenses and non-cash
+                    payment items (debit items of profit and loss account) are to be added to given net profit, and all
+                    non-operating incomes & non-cash received items (credit items of profit and loss A/C) are to be
+                    deducted from given net profit to find the funds from operations.
+                </p>
+                <figure class="image">
+                    <picture>
+
+                        <a href="https://i.ibb.co/19JqgYS/fund-flow6.png">
+                            <img src="https://i.ibb.co/19JqgYS/fund-flow6.png" alt="fund-flow6" border="0"
+                                sizes="(max-width: 660px) 100vw, 660px"></a>
+                    </picture>
+                </figure>
+
+
+
+                <p><strong>Note:</strong>
+                    When tax paid is not given, it is considered that the tax provided in the previous year is
+                    paid in the current year.
+                </p>
+                <figure class="image">
+                    <picture>
+
+                        <a href="https://i.ibb.co/JywmZDv/fund-flow7.png">
+                            <img src="https://i.ibb.co/JywmZDv/fund-flow7.png" alt="fund-flow7" border="0"
+                                sizes="(max-width: 660px) 100vw, 660px"></a>
+                    </picture>
+                </figure>
+
+
+                <p><strong>Note:</strong>
+                    When dividend paid is not given, it is considered that the dividend proposed in the previous
+                    year is paid in the present year.
+                </p>
+
+                <p><strong>Note:</strong>
+                    It can be found even if any one of the items is not given in the above said accounts. </p>
+                <p>
+
+                    In case
+                    provision for tax and proposed dividend are taken as current liabilities, there is no need to
+                    prepare those accounts. These should be shown in the “statement of changes in working capital” only.
+                </p>
+                <p> If these both are taken as an appropriation of profit (unlike current liabilities), there is a need
+                    to prepare their accounts to know the hidden information. Provision for tax and proposed dividend
+                    are to be added to the net profit to know the funds from operations and tax paid & dividend paid are
+                    shown on the applications’ side in the funds flow statement.
+                </p>
+
+                <div class="c1">III. Funds Flow Statement</div>
+                <figure class="image">
+                    <picture>
+
+                        <a href="https://i.ibb.co/Hpnxm0r/fund-flow8.png">
+                            <img src="https://i.ibb.co/Hpnxm0r/fund-flow8.png" alt="fund-flow8" border="0"
+                                sizes="(max-width: 660px) 100vw, 660px"></a>
+                    </picture>
+                </figure>
+
+                <div class="c1">Procedure for Preparation</div>
+                <p>
+                    1. By examining the non-current assets and liabilities, show as a source if cash comes and as an
+                    application if cash goes out.
+                </p>
+                <p>
+                    2. Show non-operating income as a source and non-operating expenses as an application.
+                </p>
+                <p>
+                    3. Through adjustment items, if cash comes in show as a source and if cash goes out show as an
+                    application.
+                </p>
+                <p>
+                    4. If goodwill shows increase, take on the applications’ side.
+                </p>
+                <p><strong>Note:</strong>
+                    In order to say in a single sentence, except the items taken in the “statements of changes in
+                    working capital and funds from operations”, take as a source when cash comes through all other items
+                    and take as an application when cash goes out through all other items.
+                </p>
+
+                <div class="c1">PRACTICE PROBLEMS</div>
+
+                <p>
+                    1. Prepare:
+                </p>
+                <ol>
+                    <li>Statement of Changes in Working Capital</li>
+                    <li>Funds Flow Statement</li>
+                </ol>
+                <p>
+                    from the following balance sheets of Vijaya Mitra Ltd., as on 31-03-2016 and 31-03-2017:
+                </p>
+                <figure class="image">
+                    <picture>
+
+                        <a href="https://i.ibb.co/McjdJxZ/fund-flow9.png">
+                            <img src="https://i.ibb.co/McjdJxZ/fund-flow9.png" alt="fund-flow9" border="0"
+                                sizes="(max-width: 660px) 100vw, 660px"></a>
+                    </picture>
+                </figure>
+
+
+
+                <div class="c1">Adjustments:</div>
+                <p><strong>Dividend declared and paid:</strong> Rs. 25,000</p>
+                <p><strong>Additional plant purchased:</strong> Rs. 5,000</p>
+                <p><strong>Tax paid during the year:</strong> Rs. 45,000</p>
+
+
+                <div class="c1">Solution:</div>
+                <figure class="image">
+                    <picture>
+
+                        <a href="https://i.ibb.co/DDLbwN2/fund-flow10.png">
+                            <img src="https://i.ibb.co/DDLbwN2/fund-flow10.png" alt="fund-flow10" border="0"
+                                sizes="(max-width: 660px) 100vw, 660px"></a>
+                    </picture>
+                </figure>
+                <figure class="image">
+                    <picture>
+
+                        <a href="https://i.ibb.co/0qBSpk3/fund-flow11.png">
+                            <img src="https://i.ibb.co/0qBSpk3/fund-flow11.png" alt="fund-flow11" border="0"
+                                sizes="(max-width: 660px) 100vw, 660px"></a>
+                    </picture>
+                </figure>
+
+                <p><strong>working notes:</strong></p>
+                <figure class="image">
+                    <picture>
+
+                        <a href="https://i.ibb.co/KNfqYN2/fund-flow12.png">
+                            <img src="https://i.ibb.co/KNfqYN2/fund-flow12.png" alt="fund-flow12" border="0"
+                                sizes="(max-width: 660px) 100vw, 660px"></a>
+                    </picture>
+                </figure>
+
+
+
+                <div class="c1">Advantages of Fund Flow Statements</div>
+                <p>1. Funds flow statement reveals the net result of business operations done by the company during the
+                    year.</p>
+                <p>2. In addition to the balance sheet, it serves as an additional reference for many interested parties
+                    like analysts, creditors, suppliers, and the government to look into the financial position of the
+                    company.</p>
+                <p>3. The Fund Flow Statement shows how the funds were raised from various sources and also how those
+                    funds were deployed by the company.</p>
+                <p>4. It reveals the causes for the changes in liabilities and assets between the two balance sheet
+                    dates.</p>
+                <p>5. Funds flow statement helps the management in deciding its future course of plans and also acts as
+                    a control tool for the management.</p>
+                <div class="c1">Disadvantages of Fund Flow Statements</div>
+                <p>1. Funds Flow statement has to be used along with the balance sheet and profit and loss account for
+                    inference of financial strengths and weaknesses of a company; it cannot be used alone.</p>
+                <p>2. Fund Flow Statement does not reveal the cash position of the company, and that is why the company
+                    has to prepare a cash flow statement in addition to the funds flow statement.</p>
+                <p>3. Funds flow statement only rearranges the data which is there in the books of account and therefore
+                    it lacks originality.</p>
+                <p>4. Funds flow statement is basically historic in nature, that is, it indicates what happened in the
+                    past and it does not communicate anything about the future; only estimates can be made based on the
+                    past data and therefore it cannot be used by the management for taking decisions related to the
+                    future.</p>
+                <div class="c1">Cash Flow Analysis</div>
+
+                <p>A Cash Flow Statement is a statement showing changes in cash position of the firm from one period to
+                    another. It explains the inflows (receipts) and outflows (disbursements) of cash over a period of
+                    time. The inflows of cash may occur from sale of goods, sale of assets, receipts from debtors,
+                    interest, dividend, rent, issue of new shares and debentures, raising of loans, short-term
+                    borrowing, etc. The cash outflows may occur on account of purchase of goods, purchase of assets,
+                    payment of loans loss on operations, payment of tax and dividend, etc.</p>
+
+                <p>The cash flow statement shows how much cash comes in and goes out of the company over the quarter or
+                    the year. At first glance, that sounds a lot like the income statement in that it records financial
+                    performance over a specified period. But there is a big difference between the two.</p>
+
+                <p>What distinguishes the two is accrual accounting, which is found on the income statement. Accrual
+                    accounting requires companies to record revenues and expenses when transactions occur, not when cash
+                    is exchanged. At the same time, the income statement, on the other hand, often includes non-cash
+                    revenues or expenses, which the statement of cash flows does not include.</p>
+
+                <p>Just because the income statement shows net income of Rs.10 does not mean that cash on the balance
+                    sheet will increase by Rs.10. Whereas when the bottom of the cash flow statement reads Rs.10 net
+                    cash inflow, that's exactly what it means. The company has Rs.10 more in cash than at the end of the
+                    last financial period. You may want to think of net cash from operations as the company's "true"
+                    cash profit.</p>
+
+                <p>Because it shows how much actual cash a company has generated, the statement of cash flows is
+                    critical to understanding a company's fundamentals. It shows how the company is able to pay for its
+                    operations and future growth.</p>
+
+                <p>Indeed, one of the most important features you should look for in a potential investment is the
+                    company's ability to produce cash. Just because a company shows a profit on the income statement
+                    doesn't mean it cannot get into trouble later because of insufficient cash flows. A close
+                    examination of the cash flow statement can give investors a better sense of how the company will
+                    fare.</p>
+
+                <div class="c1">Objectives Of Cash Flow Statement
+
+                </div>
+
+                <p>1. Highlighting cash flow from different activities</p>
+                <p>2. Short-term Planning</p>
+                <p>3. Cash Flow information helps to understand liquidity</p>
+                <p>4. Efficient cash management</p>
+                <p>5. Prediction of sickness</p>
+                <p>6. Comparison with budget</p>
+                <p>7. Cash position</p>
+
+                <div class="c1">Current Assests And Current Liabilities
+
+                </div>
+
+                <p><strong> Current Assets</strong></p>
+                <p>1. Cash in hand</p>
+                <p>2. Cash at bank</p>
+                <p>3. Bills receivables</p>
+                <p>4. Debtors</p>
+                <p>5. Short term advances</p>
+                <p>6. Short term investments</p>
+                <p>7. Inventories or stock</p>
+                <p>8. Pre-paid expenses</p>
+                <p>9. Incomes to be received</p>
+                <p>10. Loose tools, etc.</p>
+
+                <p><strong>Current Liabilities
+                    </strong></p>
+                <p>1. Bills payables</p>
+                <p>2. Creditors</p>
+                <p>3. Outstanding expenses</p>
+                <p>4. Dividends to be paid</p>
+                <p>5. Bank over draft</p>
+                <p>6. Short term loans</p>
+                <p>7. Provisions for current assets (ex: RBD)</p>
+                <p>8. Taxes to be paid</p>
+                <p>9. Provision for tax</p>
+                <p>10. Proposed dividend</p>
+
+                <p>The general rules that develop from the above discussion are:</p>
+                <p>1. An increase in current assets leads to decrease in cash.</p>
+                <p>2. A decrease in current assets leads to an increase in cash.</p>
+                <p>3. An increase in current liabilities leads to an increase in cash.</p>
+                <p>4. A decrease in current liabilities leads to a decrease in cash.</p>
+
+                <div class="c1">Preparing A Cash Flow Statement
+
+                </div>
+
+                <p>Cash flow statements have three distinct sections, each of which relates to a particular component –
+                    operations, investing and financing – of a company's business activities.</p>
+
+                <p>The indirect method of presentation is very popular, because the information required for it is
+                    relatively easily assembled from the accounts that a business normally maintains in its chart of
+                    accounts. The indirect method is less favoured by the standard-setting bodies, since it does not
+                    give a clear view of how cash flows through a business. The alternative reporting method is the
+                    direct method.</p>
+
+                <p><strong>Three Sections of the Cash Flow Statement</strong></p>
+                <p>Companies produce and consume cash in different ways, so the cash flow statement is divided into
+                    three sections: cash flows from operations, financing and investing. Basically, the sections on
+                    operations and financing show how the company gets its cash, while the investing section shows how
+                    the company spends its cash.</p>
+
+                <p><strong>1. Operating Activities:</strong> Operating activities include cash flows from all standard
+                    business operations. Cash receipts from selling goods and services represent the inflows. The
+                    revenues from interest and dividends are also included here. The operational expenditures are
+                    considered as outflows for this section. Although interest expenses fall under this section but the
+                    dividends are not included. Dividends are considered as a part of financing activity in financial
+                    accounting terms.</p>
+
+                <p><strong>2. Investing Activities:</strong> Investing activities include transactions with assets,
+                    marketable securities and credit instruments. The sale of property, plant and equipment or
+                    marketable securities is a cash inflow. Purchasing property, plant and equipment or marketable
+                    securities are considered as cash outflows. Loans made to borrowers for long-term use is another
+                    cash outflow. Collections from these loans, however, are cash inflows.</p>
+
+                <p><strong>3. Financing Activities:</strong> Financing activities on the statement of cash flows are
+                    much more defined in nature. The receipts come from borrowing money or issuing stock. The outflows
+                    occur when a company repays loans, purchases treasury stock or pays dividends to stockholders. As
+                    the case with other activities on the statement of cash flows depend on activities rather than
+                    actual general ledger accounts.</p>
+                <figure class="image">
+                    <picture>
+
+                        <a href="https://i.ibb.co/Xp9yvpx/cash-flow1.png">
+                            <img src="https://i.ibb.co/Xp9yvpx/cash-flow1.png" alt="cash-flow1" border="0"
+                                sizes="(max-width: 660px) 100vw, 660px"></a>
+                    </picture>
+                </figure>
+
+                <div class="c1">Procedure for Preparation</div>
+
+                <p>1. Prepare accounts for adjustments to find hidden information.</p>
+                <p>2. Observe balance sheets and accounts for adjustments. Adjust non-cash items, non-operating items,
+                    and current assets & current liabilities to net profit except cash and bank balances.</p>
+                <p>3. Observe all fixed assets and their adjustment accounts. Show purchase and sale of assets.</p>
+                <p>4. Observe all capital & long-term liabilities and their adjustment accounts. Show capital & loans
+                    received and repaid.</p>
+
+                <div class="c1">Advantages Of Cash Flow Statement</div>
+
+                <p>1. It shows the actual cash position available with the company between the two balance sheet dates,
+                    which funds flow and profit and loss account are unable to show. So, it is important to make a cash
+                    flow report if one wants to know about the liquidity position of the company.</p>
+                <p>2. It helps the company in accurately projecting the future liquidity position of the company,
+                    enabling it to arrange for any shortfall in money by arranging finance in advance. If there is
+                    excess, it can help the company in earning extra returns by deploying excess funds.</p>
+                <p>3. It acts like a filter and is used by many analysts and investors to judge whether the company has
+                    prepared the financial statements properly or not. If there is any discrepancy in the cash position
+                    as shown by the balance sheet and the cash flow statement, it means that statements are incorrect.
+                </p>
+
+                <div class="c1">Disadvantages Of Cash Flow Statement</div>
+
+                <p>1. Since it shows only the cash position, it is not possible to deduce the actual profit and loss of
+                    the company by just looking at this statement.</p>
+                <p>2. In isolation, this is of no use and it requires other financial statements like balance sheet,
+                    profit and loss, etc., and therefore limiting its use.</p>
+
+                <div class="c1">Practice Problems And Solutions</div>
+
+                <p>1. From the following balance sheets as on 31-12-2016 and 31-12-2017. You are required to prepare a
+                    cash flow statement.</p>
+
+                <figure class="image">
+                    <picture>
+
+                        <a href="https://i.ibb.co/d0Dg9WX/cash-flow2.png">
+                            <img src="https://i.ibb.co/d0Dg9WX/cash-flow2.png" alt="cash-flow2" border="0"
+                                sizes="(max-width: 660px) 100vw, 660px"></a>
+                    </picture>
+                </figure>
+                <figure class="image">
+                    <picture>
+
+                        <a href="https://i.ibb.co/VJZMFGj/cash-flow3.png">
+                            <img src="https://i.ibb.co/VJZMFGj/cash-flow3.png" alt="cash-flow3" border="0"
+                                sizes="(max-width: 660px) 100vw, 660px"></a>
+                    </picture>
+                </figure>
+
+            </div>
+            <div class="extra">
+                <!----<h1>Query Box</h1>
+
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="011bd98a-293e-4d49-a2a4-c693ecea3738">
+                    <label for="name">Your Name:</label>
+                    <input type="text" name="name" required>
+
+                    <label for="email">Your Email:</label>
+                    <input type="email" name="email" required>
+
+                    <label for="comment">Your Query:</label>
+                    <textarea name="Query" rows="4" required></textarea>
+
+                    <button type="submit">Submit Query</button>
+                </form>-->
+            </div>
+        </div>
+
+
+        <footer>
+            <div class="footer-content">
+                <div class="about" id="about">
+                    <f3><b>About:</b></f3>
+                    <p>Welcome to cmrTpoint, the official academic tutorial platform of students! We provide certified
+                        answers, reliable educational content, and continuously update our platform to enhance your
+                        learning
+                        experience. With the collaboration of students and faculty guidance, cmrTpoint is committed to
+                        academic excellence and innovation.</p>
+                </div>
+                <div class="contact" id="contact">
+                    <f3><b>Contact:</b></f3>
+                    <p>Email: udayin475@gmail.com</p>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2024 Your @udayusr. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
