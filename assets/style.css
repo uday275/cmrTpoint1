@@ -1,0 +1,418 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+p {
+  text-align: justify;
+  padding-bottom: 2%;
+  line-height: 2.3;
+  color: ;
+}
+
+body {
+  background-image: url("");
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 2.3;
+  word-spacing: 0.3em;
+  color: #0c0c0c;
+
+
+  .logo {
+    width: 200px;
+    height: 40px;
+  }
+
+  .menu-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #073B5E;
+    text-align: center;
+    overflow-x: auto;
+    white-space: nowrap;
+    line-height: 15px;
+    z-index: 1000;
+  }
+
+  .menu-bar ul {
+    display: flex;
+    list-style: none;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  .hide-desktop {
+    display: block;
+    /* or any other suitable display property for mobile */
+  }
+
+  .show-mobile {
+    display: none;
+  }
+
+  .menu-bar ul li {
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+  }
+
+  .menu-bar ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .active,
+  .menu-bar ul li:hover {
+    background: #030404;
+    border-radius: 6%;
+  }
+
+  .menu-bar.active {
+    background-color: #04AA6D !important;
+    color: #fff !important;
+  }
+
+  nav ul {
+    list-style-type: none;
+    display: flex;
+  }
+
+  nav li {
+    margin-right: 20px;
+  }
+
+  .active {
+    display: block;
+  }
+
+
+
+  .menu-bar ul li:hover .sub-menu-1 {
+    display: block;
+    position: absolute;
+    background: #073B5E;
+    margin-top: -25px;
+    margin-left: 50px;
+  }
+
+  .menu-bar ul li:hover .sub-menu-1 ul {
+    display: block;
+    margin: 10px;
+  }
+
+  .menu-bar ul li:hover .sub-menu-1 ul li {
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+  }
+
+  .menu-bar ul li:hover .sub-menu-1 ul li a:hover {
+    color: #b2ff00;
+  }
+
+  .fa-angle-right {
+    float: right;
+  }
+
+
+
+
+  h2,
+  h3,
+  h4 {
+    color: #df3a01;
+    line-height: 5;
+    font: 15px verdana, helvetica, arial, sans-serif;
+    display: inline;
+    margin-left: -4px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 23px;
+    background: url(https://static.javatpoint.com/images/logo/icon_bullet.png) no-repeat;
+    font-weight: bold;
+    float: left;
+  }
+
+  h2 {
+    margin-top: 35px;
+  }
+
+  .c1 {
+    font-family: verdana, helvetica, arial, sans-serif;
+    font-size: 29px;
+    color: #df1077;
+    font-weight: lighter;
+    margin-top: 5px;
+    line-height: 1.3em;
+    display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+
+  .vl {
+    border-left: 6px solid green;
+    height: 500px;
+  }
+
+  .sidebar ul {
+    list-style-type: none;
+    margin: 6;
+    padding: 0;
+    margin-top: 2px;
+    word-wrap: break-word;
+  }
+
+  .sidebar li a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin-left: 10px;
+    margin-top: 2px;
+    float: left;
+    background: url(https://static.javatpoint.com/images/arrowbullet.png) 0 4px no-repeat;
+    padding-left: 15px;
+    font-family: 14px Söhne, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 14px;
+    line-height: 23px;
+    color: #0b0b0b;
+    text-decoration: rgb(5, 5, 5);
+  }
+
+  .sidebar a:hover {
+    color: rgb(3, 3, 3);
+    text-decoration: underline;
+  }
+
+  .inbox {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .sidebar {
+    top: 0;
+    flex: 1;
+    width: 28%;
+    height: 100%;
+    padding: 30px;
+    background-color: #faf7f7;
+    border-width: 10px;
+    padding-top: 20px;
+    padding-bottom: 100%;
+    overflow-y: scroll;
+
+  }
+
+  .sidebar a.active {
+    background-color: #19bcbf;
+  }
+
+  .main {
+    flex: 4;
+    margin-bottom: auto;
+    padding-left: 2%;
+    padding-top: 3%;
+    padding-right: 2%;
+    position: relative;
+    font-weight: semi-bold;
+    width: 50%;
+    background-color: #fdf9f9;
+  }
+
+  .image {
+    width: 80%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* Default CSS styles for desktop view */
+  .equation {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 60%;
+    font-size: 1em;
+    box-sizing: border-box;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+
+  .extra {
+    width: 22%;
+  }
+
+  /* form {
+    max-width: 300px;
+    margin: 10px auto;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(52, 122, 228, 0.1);
+  }
+
+  h1 {
+    color: #333;
+    text-align: center;
+    margin-top: 55px;
+  }
+
+  label {
+    display: block;
+    margin-top: 10px;
+    color: #090808;
+  }
+
+  input,
+  textarea {
+    font-family: 'Arial', 'proxima-nova', ' Open Sans', 'sans-serif';
+    font-size: 16px;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid blue;
+    margin-bottom: 10px;
+    width: 95%;
+  }
+
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #45a049;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .col-3 {
+    width: 100%;
+    float: none;
+  }
+
+  .onlycontentad {
+    display: none;
+  }
+  */
+
+  .main ul {
+    list-style-type: disc;
+    padding-left: 25px;
+  }
+
+  .main ul li {
+    padding-left: 25px;
+    font: 16px Arial, sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+  }
+
+  .table {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    border-collapse: collapse;
+    width: 100%;
+
+  }
+
+  .table th {
+    background-color: #f2f2f2;
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  .table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  .table td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  .table td:first-child,
+  .table th:first-child {
+    font-weight: bold;
+  }
+
+  th,
+  td {
+    border: 1px solid black;
+    padding: 5px;
+  }
+
+  th {
+    text-align: left;
+    background-color: lightgray;
+  }
+
+
+  .points {
+    list-style-type: disc;
+    padding-left: 25px;
+  }
+
+  .points li {
+    margin-bottom: 8px;
+    padding-left: 25px;
+    font-family: Arial, sans-serif;
+  }
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin-top: auto;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .about,
+  .contact,
+  .copyright {
+    flex-basis: 30%;
+  }
+
+  .about f3,
+  .contact f3 {
+    margin-top: 0;
+  }
+
+  .about p,
+  .contact p {
+    margin-bottom: 0;
+  }
+
+}

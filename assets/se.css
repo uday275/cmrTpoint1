@@ -1,0 +1,312 @@
+.logo {
+
+    width: 50px;
+    height: 50px;
+    /* Please add a specific height value */
+}
+
+.logo1 {
+    display: none;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("");
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.logo {
+
+    width: 50px;
+    height: 50px;
+    /* Please add a specific height value */
+}
+
+
+.menu-bar {
+    position: static;
+    background: #073B5E;
+    text-align: center;
+    overflow-x: auto;
+    /* Enable horizontal scrolling */
+    white-space: nowrap;
+    /* Prevent line breaks for horizontal scrolling */
+    line-height: 10px;
+    z-index: 1000;
+}
+
+.menu-bar ul {
+    display: flex;
+    list-style: none;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-bar ul li {
+    width: 100%;
+    margin: 5px;
+    padding: 15px;
+    box-sizing: border-box;
+    /* Include padding in width calculation */
+}
+
+.menu-bar ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.active,
+.menu-bar ul li:hover {
+    background: #030303;
+    border-radius: 3px;
+}
+
+.menu-bar .fa {
+    margin-right: 8px;
+}
+
+
+.sub-menu-1 {
+    display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 {
+    display: block;
+    position: absolute;
+    background: #073B5E;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul {
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li {
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child {
+    border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover {
+    color: #b2ff00;
+}
+
+.fa-angle-right {
+    float: right;
+}
+
+.sub-menu-2 {
+    display: none;
+}
+
+.hover-me:hover .sub-menu-2 {
+    position: absolute;
+    display: block;
+    margin-top: -25px;
+    margin-left: 50px;
+
+    background: rgb(65, 128, 247);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Ensures the body takes up at least the full height of the viewport */
+    margin: 0;
+    font-family: sans-serif;
+}
+
+footer {
+    background-color: #333.logo {
+        width: 50px;
+        height: 50px;
+        /* Add a specific height value */
+    }
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-image: url("");
+        /* Add your background image URL */
+        background-size: cover;
+        background-position: center;
+        font-family: sans-serif;
+    }
+
+    .menu-bar {
+        background: #073B5E;
+        text-align: center;
+        overflow-x: auto;
+        /* Enable horizontal scrolling */
+        white-space: nowrap;
+        /* Prevent line breaks for horizontal scrolling */
+        line-height: 40px;
+        /* Adjust line height as needed */
+        z-index: 1000;
+    }
+
+    .menu-bar ul {
+        display: flex;
+        list-style: none;
+        color: #fff;
+    }
+
+    .menu-bar ul li {
+        margin: 5px;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    .menu-bar ul li a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .active,
+    .menu-bar ul li:hover {
+        background: #030303;
+        border-radius: 3px;
+    }
+
+    .menu-bar .fa {
+        margin-right: 8px;
+    }
+
+    .sub-menu-1 {
+        display: none;
+    }
+
+    .menu-bar ul li:hover .sub-menu-1 {
+        display: block;
+        position: absolute;
+        background: #073B5E;
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+
+    .menu-bar ul li:hover .sub-menu-1 ul {
+        display: block;
+        margin: 10px;
+    }
+
+    .menu-bar ul li:hover .sub-menu-1 ul li {
+        width: 150px;
+        padding: 10px;
+        border-bottom: 1px dotted #fff;
+        background: transparent;
+        text-align: left;
+    }
+
+    .menu-bar ul li:hover .sub-menu-1 ul li:last-child {
+        border-bottom: none;
+    }
+
+    .menu-bar ul li:hover .sub-menu-1 ul li a:hover {
+        color: #b2ff00;
+    }
+
+    .fa-angle-right {
+        float: right;
+
+    }
+
+    .sub-menu-2 {
+        display: none;
+    }
+
+    .hover-me:hover .sub-menu-2 {
+        position: relative;
+        display: block;
+        margin-top: -40px;
+        margin-left: 140px;
+        background: rgb(86, 86, 231);
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0;
+        font-family: sans-serif;
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        margin-top: auto;
+        width: 100%;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .about,
+    .contact,
+    .copyright {
+        flex-basis: 30%;
+    }
+
+    .about h3,
+    .contact h3 {
+        margin-top: 0;
+    }
+
+    .about p,
+    .contact p {
+        margin-bottom: 0;
+    }
+
+    ;
+    color: #fff;
+    padding: 20px;
+    margin-top: auto;
+    /* Pushes the footer to the bottom of the container */
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about,
+.contact,
+.copyright {
+    flex-basis: 30%;
+}
+
+.about h3,
+.contact h3 {
+    margin-top: 0;
+}
+
+.about p,
+.contact p {
+    margin-bottom: 0;
+}

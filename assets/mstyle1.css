@@ -1,0 +1,96 @@
+@media(max-width: 600px) {
+    .logo {
+        width: 160px;
+    }
+
+    body {
+
+        background-repeat: repeat;
+        background-attachment: fixed;
+        background-size: 100%;
+    }
+
+    .mvideo {
+        display: none;
+        /* Hide both videos by default */
+    }
+
+
+
+
+    .nav-links li {
+        margin: 2px 100px;
+    }
+
+    .content h1 {
+        font-size: 40px;
+        margin: auto;
+    }
+
+    .content form input {
+        font-size: 16px;
+    }
+
+    .category-list {
+        display: flex;
+        flex-wrap: wrap;
+        /* key for category arrangments */
+    }
+
+    .category {
+        width: 33.33%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        text-align: center;
+    }
+
+    .category img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .category span {
+        font-size: 12px;
+    }
+
+    .back-video {
+        width: 100%;
+        /* Set the width of the video element to 100% of its container */
+        height: auto;
+        /* Maintain the aspect ratio of the video */
+        object-fit: cover;
+        /* Ensure the video covers the entire container while maintaining its aspect ratio */
+    }
+
+    footer {
+        background-color: #333;
+        color: #f1f1f6;
+        padding: 20px;
+        margin-top: auto;
+    }
+
+    .footer-content {
+        display: contents;
+        justify-content: left;
+    }
+
+    .about,
+    .contact,
+    .copyright {
+        flex-basis: 30%;
+
+    }
+
+    .about f3,
+    .contact f3 {
+        margin-top: 0;
+    }
+
+    .about p,
+    .contact p {
+        margin-bottom: 0;
+    }
+
+}

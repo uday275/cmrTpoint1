@@ -1,0 +1,142 @@
+@media screen and (max-width: 600px) {
+    .menu-bar {
+        position: relative;
+        overflow-x: visible;
+        white-space: normal;
+        line-height: 50px;
+        background-color: #073B5E;
+        text-align: left;
+    }
+
+    .logo {
+        display: none;
+
+    }
+
+    .logo1 {
+        display: flex;
+        width: 80px;
+        height: 75px;
+        align items: center;
+        justify-content: center;
+        margin: 0px 10px;
+
+    }
+
+    .menu-bar ul {
+        display: block;
+        width: 100%;
+        margin: 5px 0px;
+
+
+    }
+
+    .menu-bar ul li {
+        width: auto;
+        padding: 10px;
+        margin: 3px 0px;
+
+    }
+
+    .menu-bar ul li a {
+        padding: 5px;
+
+    }
+
+    .active,
+    .menu-bar ul li:hover {
+        background: #030303;
+        border-radius: 3px;
+
+    }
+
+    .sub-menu-1,
+    .sub-menu-2 {
+        position: relative;
+        margin-top: 0;
+        margin-left: 100px;
+        background: transparent;
+        border-radius: none;
+        text-align: center;
+    }
+
+    .sub-menu-1 ul,
+    .sub-menu-2 ul {
+        display: block;
+        position: relative;
+        margin: auto;
+
+        padding: 0;
+    }
+
+    .sub-menu-1 ul li,
+    .sub-menu-2 ul li {
+        width: auto;
+        padding: 10px;
+        border-bottom: none;
+        background: #030303;
+        border-radius: 1px;
+    }
+
+    .menu-bar ul li:hover .sub-menu-1,
+    {
+    display: block;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul {
+    background: transparent;
+    text-align: left;
+    position: absolute;
+    margin-top: -55px;
+    margin-left: 125px;
+
+}
+
+.menu-bar ul li:hover .sub-menu-2 ul {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+}
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: auto;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #073B5E;
+    background-image: none;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin-top: auto;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about,
+.contact,
+.copyright {
+    flex-basis: 30%;
+}
+
+.about h3,
+.contact h3 {
+    margin-top: 0;
+}
+
+.about p,
+.contact p {
+    margin-bottom: 0;
+}
